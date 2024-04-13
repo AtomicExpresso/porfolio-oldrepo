@@ -48,6 +48,7 @@ li {
   width: 100%;
   z-index: 500;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  text-align: center;
 
   & .nav-row{
     display: flex;
@@ -62,21 +63,49 @@ li {
 
   & ul {
     display: flex;
-    flex-direction: row;
+    justify-content: center;
     gap: 10px;
-    margin-right: 20px;
+    margin: 20px;
   }
 
-  & a{
+  a {
     color: var(--header-text-color);
     text-decoration: none;
     font-weight: 500;
     font-size: 20px;
-    transition: 0.4s;
-  }
+    position: relative;
+    transition: color 0.4s;
+    color: var(--background-third-color);
 
-  & a:hover {
-    color: var(--header-text-color-secondary);
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: -5px;
+      left: 0;
+      height: 2px;
+      background-color: transparent;
+      transition: background-color 0.4s;
+    }
+
+    &:hover {
+      color: var(--header-text-color-secondary);
+    }
+
+    &:hover::after {
+      animation: navAni 0.5s forwards;
+      background-color: var(--header-text-color-secondary);
+    }
+  }
+}
+
+@keyframes navAni {
+  from {
+    transform: scaleX(0);
+    width: 100%;
+  }
+  to {
+    transform: scaleX(1);
+    width: 100%;
   }
 }
 
