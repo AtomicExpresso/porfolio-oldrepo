@@ -8,6 +8,8 @@
   --header-text-color-third: #ffff;
   --para-text-color: #484B45;
 
+  --header-text-color-clicked: #3477e3;
+
   --background-secondary-color: #ffc107;
   --background-third-color: #484B45;
 
@@ -30,6 +32,54 @@ h1 {
   font-size: 3.2em;
   line-height: 1.1;
 }
+
+li {
+  list-style: none;
+}
+
+/*1. Navbar*/
+.nav-bar{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  background-color: var(--header-text-color-third);
+  width: 100%;
+  z-index: 500;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+  & .nav-row{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+
+    & .nav-row img{
+      height:  22px;
+      width: 22px;
+    }
+  }
+
+  & ul {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-right: 20px;
+  }
+
+  & a{
+    color: var(--header-text-color);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 20px;
+    transition: 0.4s;
+  }
+
+  & a:hover {
+    color: var(--header-text-color-secondary);
+  }
+}
+
 
 /*1. Hero*/
 .hero-container{
