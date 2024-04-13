@@ -336,6 +336,10 @@ li {
   color: var(--header-text-color-third);
   margin: 50px 0 0;
 
+  & a {
+    text-decoration: none;
+  }
+
   & .footer-content{
     display: flex;
     flex-direction: row;
