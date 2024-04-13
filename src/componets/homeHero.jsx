@@ -3,6 +3,7 @@ import Twitter from '../assets/images/icons/twitter.svg';
 import Youtube from '../assets/images/icons/youtube.svg';
 import Instagram from '../assets/images/icons/instagram.svg';
 import Discord from '../assets/images/icons/discord.svg';
+import WhiteWave from '../assets/images/decorations/banner-wave-white.svg';
 
 
 function HomeHero(){
@@ -25,6 +26,7 @@ function HomeHero(){
           <img src={ProfilePic} draggable='false'></img>
         </div>
       </div>
+      <img src={WhiteWave} draggable='false'></img>
     </div>
   )
 }

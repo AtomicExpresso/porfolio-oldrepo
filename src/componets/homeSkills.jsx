@@ -20,7 +20,7 @@ function HomeSkills(){
 
   return(
     <div className='home-skills'>
-      <img src={TopWave}></img>
+      <img src={TopWave} draggable='false'></img>
       <div className='home-inner-content'>
         <h1>Skills</h1>
         <hr></hr>
@@ -42,7 +42,7 @@ function HomeSkills(){
           <CreateSkillItem itemName="Computer Maintence"/>
         </div>
       </div>
-      <img src={BottomWave}></img>
+      <img src={BottomWave} draggable='false'></img>
     </div>
   )
 }

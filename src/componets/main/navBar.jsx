@@ -12,7 +12,7 @@ function Navbar() {
     return (
       <div className="nav-bar">
       <div className="nav-row">
-        <img src={Logo}></img>
+        <img src={Logo} draggable='false'></img>
         <h1>hi</h1>
       </div>
       <nav>
