@@ -1,4 +1,4 @@
-
+import ProjectIcon from '../assets/images/icons/decor/paintbrush-solid.svg';
 
 function HomeProjects(){
 
@@ -19,7 +19,10 @@ function HomeProjects(){
 
   return (
     <div className="home-projects">
-      <h1>My Projects</h1>
+      <div className='project-title'>
+        <img src={ProjectIcon} draggable='false'></img>
+        <h1>My Projects</h1>
+      </div>
       <p>Heres a list of my best projects i've developed and worked on</p>
       <hr></hr>
       <div className="project-list-container">

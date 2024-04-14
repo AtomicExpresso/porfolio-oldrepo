@@ -6,11 +6,15 @@ import ReactIcon from '../assets/images/icons/bars/react-bar.svg';
 import ScssIcon from '../assets/images/icons/bars/scss-bar.svg';
 import ViteIcon from '../assets/images/icons/bars/vite-bar.svg';
 import WebpackIcon from '../assets/images/icons/bars/webpack-bar.svg';
+import ProfileIcon from '../assets/images/icons/decor/user-solid.svg';
 
 function HomeInfo() {
   return (
     <div className="home-info">
-      <h1>About Me</h1>
+      <div className='info-title'>
+        <img src={ProfileIcon}></img>
+        <h1>About Me</h1>
+      </div>
       <hr></hr>
       <p>👋 Hello there! I'm Pumped, a passionate and dedicated full-stack developer with a love for turning innovative ideas into reality through code. I thrive in the dynamic world of web development, constantly seeking new challenges and opportunities to expand my skills.</p>
       <button className="btn btn-primary">Read More</button>
