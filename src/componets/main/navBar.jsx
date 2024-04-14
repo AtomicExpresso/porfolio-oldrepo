@@ -13,7 +13,7 @@ function Navbar() {
       <div className="nav-bar">
       <div className="nav-row">
         <img src={Logo} draggable='false'></img>
-        <h1>Atomic</h1>
+        <h1>Felix</h1>
       </div>
       <nav>
         <ul>
