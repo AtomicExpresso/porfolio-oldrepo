@@ -731,3 +731,21 @@ li {
     scale: 0.94;
   }
 }
+
+.settings-popup{
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  right: 5px;
+  bottom: 50px;
+  background-color: var(--header-text-color-third);
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  z-index: 99;
+  border-radius: 10px;
+  height: 100px;
+  width: 150px;
+
+  & button {
+    margin: auto auto 10px;
+  }
+}
