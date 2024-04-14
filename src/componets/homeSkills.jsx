@@ -8,6 +8,7 @@ import ReactIcon from '../assets/images/icons/bars/react-bar.svg';
 import ScssIcon from '../assets/images/icons/bars/scss-bar.svg';
 import ViteIcon from '../assets/images/icons/bars/vite-bar.svg';
 import WebpackIcon from '../assets/images/icons/bars/webpack-bar.svg';
+import HammerIcon from '../assets/images/icons/decor/hammer-solid.svg';
 
 function HomeSkills(){
   const CreateSkillItem = ({itemName}) => {
@@ -22,7 +23,10 @@ function HomeSkills(){
     <div className='home-skills'>
       <img src={TopWave} draggable='false'></img>
       <div className='home-inner-content'>
-        <h1>Skills</h1>
+        <div className='skills-txt'>
+          <img src={HammerIcon} draggable='false'></img>
+          <h1>Skills</h1>
+        </div>
         <hr></hr>
         <div className='skill-item-container'>
           {/*Languages*/}

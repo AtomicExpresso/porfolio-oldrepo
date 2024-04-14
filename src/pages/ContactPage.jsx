@@ -1,6 +1,12 @@
+import ContactHero from "../componets/Contact/contactHero"
+import ContactBox from "../componets/Contact/contactBox"
+
 function ContactPage(){
   return (
-    <h1>hi</h1>
+    <div>
+      <ContactHero/>
+      <ContactBox/>
+    </div>
   )
 }
 
