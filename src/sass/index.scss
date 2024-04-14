@@ -654,3 +654,43 @@ li {
     color: var(--header-text-color-third);
   }
 }
+
+/*2e About content*/
+.about-content{
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  width: 80%;
+  border-radius: 10px;
+  margin: 50px auto;
+
+  & hr{
+    width: 90%;
+    margin: auto;
+  }
+}
+
+.about-title{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+  color: var(--header-text-color-clicked);
+  margin: 20px auto;
+  font-family: 'Jhal-Muri';
+}
+
+.about-text{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 30px auto;
+  padding: 0 0 50px;
+
+  & p {
+    max-width: 80%;
+    margin: auto;
+    text-align: center;
+  }
+}

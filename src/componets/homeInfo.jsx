@@ -19,7 +19,7 @@ function HomeInfo() {
       </div>
       <hr></hr>
       <p>👋 Hello there! I'm Felix, a passionate and dedicated full-stack developer with a love for turning innovative ideas into reality through code. I thrive in the dynamic world of web development, constantly seeking new challenges and opportunities to expand my skills.</p>
-      <button className="btn btn-primary">Read More</button>
+      <a href='/about'><button className="btn btn-primary">Read More</button></a>
       <div className="icon-list">
         <img src={HtmlIcon} alt="html 5" draggable='false'></img>
         <img src={CssIcon} alt="css 3" draggable='false'></img>
