@@ -36,7 +36,9 @@ function HomeSkills(){
          {/*Tech*/}
          <CreateSkillItem itemName="Bootstrap"/>
          <CreateSkillItem itemName="React"/>
+         <CreateSkillItem itemName="Tauri"/>
          <CreateSkillItem itemName="Scss"/>
+         <CreateSkillItem itemName="React Native"/>
          <CreateSkillItem itemName="Vite"/>
          <CreateSkillItem itemName="Webpack"/>
           {/*Industry skills*/}

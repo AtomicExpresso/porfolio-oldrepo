@@ -20,7 +20,7 @@ function HomeHero(){
             <img src={Instagram} alt='Instagram' draggable='false'></img>
             <img src={Discord} alt='Discord' draggable='false'></img>
           </div>
-          <button className="btn btn-primary">View Projects</button>
+          <a href='/projects'><button className="btn btn-primary">View Projects</button></a>
         </div>
         <div className="hero-col-2">
           <img src={ProfilePic} draggable='false'></img>

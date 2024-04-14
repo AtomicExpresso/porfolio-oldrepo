@@ -21,10 +21,16 @@ function Navbar() {
             <NavLink exact to="/" style={location.pathname === "/" ? activeStyle : null}>Home</NavLink>
           </li>
           <li>
+            <NavLink to="/projects" style={location.pathname === "/projects" ? activeStyle : null}>Projects</NavLink>
+          </li>
+          <li>
             <NavLink to="/blog" style={location.pathname === "/blog" ? activeStyle : null}>Blog</NavLink>
           </li>
           <li>
             <NavLink to="/contact" style={location.pathname === "/contact" ? activeStyle : null}>Contact</NavLink>
+          </li>
+          <li>
+            <NavLink to="/about" style={location.pathname === "/about" ? activeStyle : null}>About</NavLink>
           </li>
         </ul>
       </nav>
