@@ -601,11 +601,12 @@ li {
 
 /*2d. Project Title*/
 
-.projects-title{
+.projects-page-title{
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: 30px 0 0;
+  text-align: center;
 
   & h1{
     color: var(--header-text-color);
@@ -613,6 +614,10 @@ li {
 
   & hr{
     width: 60%;
+  }
+
+  & p {
+    max-width: 700px;
   }
 }
 
@@ -635,6 +640,61 @@ li {
       scale: 0.95;
     }
   }
+}
+
+/*3e. Project Container*/
+
+.project-container{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 10px;
+  gap: 20px;
+}
+
+.project-page-item{
+  display: flex;
+  flex-direction: column;
+  background-color: var(--header-text-color-third);
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  width: 300px;
+  height: 290px;
+  border-radius: 10px;
+  align-items: center;
+  text-align: center;
+  transition: 0.3s;
+
+  & img{
+    height: 100px;
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom: solid 2px #63636344;
+  }
+
+  & h1{
+    font-size: 25px;
+    color: var(--header-text-color-secondary);
+  }
+
+  & h2{
+    font-size: 12px;
+  }
+
+  & p{
+    max-width: 290px;
+  }
+
+  &:hover{
+    transform: translateY(-20px);
+  }
+}
+
+.project-item-btn{
+  display: flex;
+  gap: 5px;
+  margin: auto 0 15px;
 }
 
 /*==============*/

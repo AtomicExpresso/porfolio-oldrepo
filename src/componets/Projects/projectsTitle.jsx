@@ -14,9 +14,9 @@ function ProjectsTile(){
   }
 
   return (
-    <div className="projects-title">
+    <div className="projects-page-title">
       <h1>My Project's</h1>
-      <p>Here's a list of my projects</p>
+      <p>Here's a list of my projects. Built using a wide range of languages, frameworks and libaries. Each project is responsive and supports desktop & mobile</p>
       <hr></hr>
       <div className="project-filter">
         <ConstructProjectFilter
