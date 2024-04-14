@@ -18,7 +18,7 @@ function Navbar() {
       <nav>
         <ul>
           <li>
-            <NavLink exact to="/" style={location.pathname === "/" ? activeStyle : null}>Home</NavLink>
+            <NavLink to="/" style={location.pathname === "/" ? activeStyle : null}>Home</NavLink>
           </li>
           <li>
             <NavLink to="/projects" style={location.pathname === "/projects" ? activeStyle : null}>Projects</NavLink>
