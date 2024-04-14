@@ -1,3 +1,5 @@
+import AboutIcon from '../../assets/images/icons/decor/user-solid.svg';
+
 function AboutContent(){
   const ConstructAboutPara = ({altTxt, Para}) => {
     return(
@@ -8,7 +10,7 @@ function AboutContent(){
   return(
     <div className="about-content">
       <div className="about-title">
-        <img></img>
+        <img src={AboutIcon}></img>
         <h1>About Me</h1>
       </div>
       <hr></hr>

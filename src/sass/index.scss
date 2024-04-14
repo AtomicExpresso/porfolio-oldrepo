@@ -679,6 +679,13 @@ li {
   color: var(--header-text-color-clicked);
   margin: 20px auto;
   font-family: 'Jhal-Muri';
+  gap: 10px;
+
+  & img{
+    width: 32px;
+    height: 32px;
+    filter: brightness(0) saturate(100%) invert(39%) sepia(93%) saturate(621%) hue-rotate(189deg) brightness(102%) contrast(104%);
+  }
 }
 
 .about-text{
