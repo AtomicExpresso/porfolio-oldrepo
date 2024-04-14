@@ -1,5 +1,5 @@
 import {NavLink, useLocation} from "react-router-dom";
-import Logo from '../../assets/images/icons/discord.svg';
+import Logo from '../../assets/images/logo/logo.svg';
 
 
 function Navbar() {
@@ -13,7 +13,7 @@ function Navbar() {
       <div className="nav-bar">
       <div className="nav-row">
         <img src={Logo} draggable='false'></img>
-        <h1>hi</h1>
+        <h1>Atomic</h1>
       </div>
       <nav>
         <ul>

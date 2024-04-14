@@ -1,3 +1,13 @@
+@font-face {
+  font-family: 'Jhal-Muri';
+  src: url(../fonts/Jhal-Muri.ttf);
+}
+
+@font-face {
+  font-family: 'hey-comic';
+  src: url(../fonts/hey-comic.ttf);
+}
+
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -50,14 +60,19 @@ li {
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   text-align: center;
 
+  & h1{
+    font-family: 'Jhal-Muri';
+    font-weight: 900;
+  }
+
   & .nav-row{
     display: flex;
     flex-direction: row;
     gap: 10px;
 
-    & .nav-row img{
-      height:  22px;
-      width: 22px;
+    & img{
+      height:  52px;
+      width: 52px;
     }
   }
 
@@ -136,6 +151,10 @@ li {
 
   & h1{
     color: var(--header-text-color);
+  }
+
+  & span{
+    font-family: 'Jhal-Muri';
   }
 
   & button{
@@ -336,6 +355,9 @@ li {
   color: var(--header-text-color-third);
   margin: 50px 0 0;
 
+  & h2 {
+    font-family: 'Jhal-Muri';
+  }
   & a {
     text-decoration: none;
   }
@@ -378,6 +400,87 @@ li {
         scale: 0.90;
       }
     }
-
   }
+}
+
+/*==============*/
+/*1b. Blog Hero*/
+
+.blog-hero{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url(../assets/images/backgrounds/bloghero-bg.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  color: white;
+  padding: 30px 0 40px;
+  
+  & h1{
+    text-shadow: 1px 1px 2px black;
+  }
+
+  & p{
+    margin: auto;
+    max-width: 600px;
+    text-align: center;
+    text-shadow: 1px 1px 2px black;
+  }
+}
+
+.blog-content-container{
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin: 50px 10px;
+}
+
+.blog-post-preview{
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  width: 250px;
+  height: auto;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  padding: 0 0 15px;
+  text-align: center;
+  transition: 0.4s;
+
+  & .blog-post-info{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 5px;
+  }
+
+  & img{
+    width: 100%;
+    height: 100px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+  }
+
+  & button {
+    margin: 20px auto;
+    width: 50%;
+  }
+
+  & h1 {
+    font-size: 27px;
+  }
+
+  & h2{
+    font-size: 13px;
+    color: var(--para-text-color);
+  }
+
+  & p{
+    max-width: 200px;
+    margin: auto;
+  }
+}
+
+.blog-post-preview:hover{
+  transform: translateY(-35px);
 }

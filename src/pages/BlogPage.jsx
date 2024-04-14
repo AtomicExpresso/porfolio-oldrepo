@@ -1,6 +1,12 @@
+import BlogHero from "../componets/Blog/blogHero";
+import BlogContent from "../componets/Blog/blogContent";
+
 function BlogPage(){
   return(
-    <h1>Blog page</h1>
+    <div>
+      <BlogHero/>
+      <BlogContent/>
+    </div>
   )
 }
 
