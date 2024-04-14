@@ -2,6 +2,7 @@ import NameIcon from '../../assets/images/icons/decor/signature-solid.svg';
 import EmailIcon from '../../assets/images/icons/decor/envelope-regular.svg';
 import MessageIcon from '../../assets/images/icons/decor/message-regular.svg';
 
+/*Constructs the contact box, and the btn handles for submission*/
 function ContactBox(){
   const FieldConstructor = ({Img, Name, PlaceHolder, LabelTxt, MinLen, MaxLen, Type}) => {
     return (
@@ -14,7 +15,6 @@ function ContactBox(){
       </div>
     )
   }
-
 
   return (
     <div className="contact-me-container">
