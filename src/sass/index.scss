@@ -852,6 +852,54 @@ li {
   }
 }
 
+/*2.g Blog share icon*/
+
+.blog-share-icon{
+  display: flex;
+  cursor: pointer;
+  margin: 0 0 0 auto;
+
+  & img{
+    width: 22px;
+    height: 22px;
+  }
+}
+
+.blog-share-popup{
+  display: flex;
+  flex-direction: column;
+  background-color: var(--header-text-color-third);
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+  border-radius: 10px;
+  padding: 10px 0 10px 0;
+  position: absolute;
+  z-index: 50;
+}
+
+.share-this{
+  display: flex;
+  flex-direction: row;
+  z-index: 51;
+  background-color: var(--header-text-color-third);
+  width: 100%;
+  transition: 0.3s;
+
+  & h1{
+    font-size: 20px;
+    margin: 0 5px 0 0;
+  }
+
+  & img{
+    height: 15px;
+    width: 15px;
+    margin: auto 5px auto 5px;
+  }
+
+  &:hover{
+    background-color: rgb(244, 244, 244);
+  }
+}
+
 /*==============*/
 //7. Functional Componets
 /*1f. Scrollbtn*/
