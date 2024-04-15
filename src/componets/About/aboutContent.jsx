@@ -17,7 +17,7 @@ function AboutContent(){
       <div className="about-text">
       <ConstructAboutPara
         altTxt='Paragrapth one'
-        Para="👋 Hello there! Im Felix, a passionate and dedicated full-stack developer with a love for turning innovative ideas into reality through code. I thrive in the dynamic world of software development, constantly seeking new challenges and opportunities to expand my skills"
+        Para="👋 Hello there! Im Felix, a passionate and dedicated front-end developer with a love for turning innovative ideas into reality through code. I thrive in the dynamic world of software development, constantly seeking new challenges and opportunities to expand my skills"
       />
       <ConstructAboutPara
         altTxt='Paragrapth two'
@@ -25,7 +25,7 @@ function AboutContent(){
       />
       <ConstructAboutPara
         altTxt='Paragrapth three'
-        Para="I'm a 20 year old computer science student, I'm fully immersed in the exciting and ever-evolving field of software development. I've spent countless hours diving into programming languages, mastering frameworks, and exploring the latest trends and technologies. From front-end technologies like HTML, SCSS, and React to back-end frameworks like Node.js and Django, I'm always eager to expand my skills and tackle new challenges head-on."
+        Para="I'm a 20 year old computer science student, I'm fully immersed in the exciting and ever-evolving field of software development. I've spent countless hours diving into programming languages, mastering frameworks, and exploring the latest trends and technologies. From front-end technologies like HTML, SCSS, and React to back-end frameworks like Node.js, I'm always eager to expand my skills and tackle new challenges head-on."
       />
       <ConstructAboutPara
         altTxt='Paragrapth four'

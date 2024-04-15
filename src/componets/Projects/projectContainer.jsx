@@ -1,4 +1,6 @@
 import TwitterCloneTn from '../../assets/images/thumbnails/twitter-clone.webp';
+import PersonalWebsiteTn from '../../assets/images/thumbnails/personal-website.webp';
+
 
 function ProjectContainer(){
   const ConstructProjectItem = ({Title, Lang, Img, Desc, Link, LinkTwo}) => {
@@ -33,7 +35,7 @@ function ProjectContainer(){
       <ConstructProjectItem
         Title='Personal Website'
         Lang='React • Sass • Bootstrap'
-        Img={TwitterCloneTn}
+        Img={PersonalWebsiteTn}
         Desc='My personal website and porfoilo. Built using React, Sass/Scss and Bootstrap'
         Link='/'
         LinkTwo='https://github.com/AtomicExpresso/porfolio-v4'
