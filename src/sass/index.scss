@@ -151,6 +151,16 @@ li {
 
   & h1{
     color: var(--header-text-color);
+    font-weight: 700;
+  }
+
+  & h2 {
+    color: var(--para-text-color);
+
+    & span{
+    font-family: 'hey-comic';
+    color: var(--header-text-color-secondary);
+    }
   }
 
   & span{
@@ -836,6 +846,8 @@ li {
     background-color: #353535;
     border-radius: 10px;
     width: 80px;
+    cursor: pointer;
+    transition: 0.3s;
 
     & h2 {
       color: var(--header-text-color-third);
@@ -845,6 +857,10 @@ li {
 
     & span{
       color: yellow;
+    }
+
+    &:hover{
+      scale: 0.94;
     }
   }
 }

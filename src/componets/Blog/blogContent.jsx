@@ -1,5 +1,7 @@
-import DefaultImage from '../../assets/images/backgrounds/bloghero-bg.jpg'
+import DefaultImage from '../../assets/images/backgrounds/bloghero-bg.jpg';
+import { BlogPostOne, BlogPostTwo } from '../Storage/BlogTextContent';
 
+/*This will display an overview of blog posts, when a button is clicked on the post preview, it will take you to the corrasponding blog post page. All of the blog post text content is stored in "storage/BlogTextContent.jsx"*/
 function BlogContent(){
   const DisplayBlogPost = ({Title, Type, Date, Desc, CoverImg, Link}) => {
     return (
@@ -19,18 +21,18 @@ function BlogContent(){
   return (
     <div className='blog-content-container'>
       <DisplayBlogPost
-        Title="Post one"
-        Type="Updates"
-        Date="4/14/2024"
-        Desc="First post!!!!"
+        Title={BlogPostOne.Title}
+        Type= {BlogPostOne.PostType}
+        Date= {BlogPostOne.Date}
+        Desc={BlogPostOne.PostPreview}
         CoverImg={DefaultImage}
         Link="blog/PostOne"
       />
       <DisplayBlogPost
-        Title="Post two"
-        Type="Updates"
-        Date="4/14/2024"
-        Desc="Second post!!!!"
+        Title={BlogPostTwo.Title}
+        Type={BlogPostTwo.PostType}
+        Date={BlogPostTwo.Date}
+        Desc={BlogPostTwo.PostPreview}
         CoverImg={DefaultImage}
         Link="blog/PostTwo"
       />
