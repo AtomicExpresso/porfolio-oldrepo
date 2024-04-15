@@ -20,7 +20,7 @@ function BlogPostPage(){
       <CreatePost
         PostTitle="Second blog post"
         PostDate="4/14/2024"
-        PostType="Updates"
+        PostType="Life"
         PostText="Hi this is my second post, just testing..."
       />)
     }
