@@ -1,7 +1,7 @@
 import DefaultImage from '../../assets/images/backgrounds/bloghero-bg.jpg'
 
 function BlogContent(){
-  const DisplayBlogPost = ({Title, Type, Date, Desc, CoverImg}) => {
+  const DisplayBlogPost = ({Title, Type, Date, Desc, CoverImg, Link}) => {
     return (
       <div className="blog-post-preview">
         <img src={CoverImg} alt="blog thumbnail" draggable='false' title={Title}></img>
@@ -11,26 +11,28 @@ function BlogContent(){
           <h2>{Date}</h2>
         </div>
         <p>{Desc}</p>
-        <button className="btn btn-primary">View</button>
+        <a href={Link}><button className="btn btn-primary">View</button></a>
       </div>
     )
   }
 
   return (
-    <div className="blog-content-container">
+    <div className='blog-content-container'>
       <DisplayBlogPost
-        Title= 'First Post!'
-        Type='General'
-        Date='4/13/2024'
-        Desc='First blog post! just testing this out'
+        Title="Post one"
+        Type="Updates"
+        Date="4/14/2024"
+        Desc="First post!!!!"
         CoverImg={DefaultImage}
+        Link="blog/PostOne"
       />
       <DisplayBlogPost
-        Title= 'Second Post!'
-        Type='Updates'
-        Date='4/13/2024'
-        Desc='First blog post! just testing this out'
+        Title="Post two"
+        Type="Updates"
+        Date="4/14/2024"
+        Desc="Second post!!!!"
         CoverImg={DefaultImage}
+        Link="blog/PostTwo"
       />
     </div>
   )

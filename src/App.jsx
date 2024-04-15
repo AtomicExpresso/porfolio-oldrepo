@@ -4,6 +4,7 @@ import ProjectPage from './pages/ProjectPage.jsx';
 import ContactPage from './pages/ContactPage.jsx';
 import AboutPage from './pages/AboutPage.jsx';
 import BlogPage from './pages/BlogPage.jsx';
+import BlogPostPage from './pages/BlogPostPage.jsx'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Navbar from './componets/main/navBar.jsx';
 import Footer from './componets/main/footer.jsx';
@@ -22,6 +23,7 @@ function App() {
           <Route path="/blog" element={<BlogPage />} />
           <Route path="/about" element={<AboutPage />} />
           <Route path="/contact" element={<ContactPage />} />
+          <Route path="blog/:id" element={<BlogPostPage />} />
         </Routes>
         <ScrollButton/>
         <Footer/>
