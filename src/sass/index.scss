@@ -1,3 +1,16 @@
+/*=====Directory========
+
+1. Navbar
+2. Blog Page
+3. Contact Page
+4. Project Page
+5. About Page
+6. Blog Post Page
+7. Functional Componets
+
+/*=====================*/
+/*Inital Setup*/
+
 @font-face {
   font-family: 'Jhal-Muri';
   src: url(../fonts/Jhal-Muri.ttf);
@@ -46,7 +59,7 @@ h1 {
 li {
   list-style: none;
 }
-
+//====================//
 /*1. Navbar*/
 .nav-bar{
   display: flex;
@@ -123,9 +136,9 @@ li {
     width: 100%;
   }
 }
-
-
-/*1. Hero*/
+//================
+/*2. Home page*/
+/*1a. Hero*/
 .hero-container{
   display: flex;
   flex-direction: column;
@@ -196,7 +209,7 @@ li {
   }
 }
 
-/*2. Home info*/
+/*2a. Home info*/
 .home-info{
   display: flex;
   flex-direction: column;
@@ -257,7 +270,7 @@ li {
   }
 }
 
-/*3. Skills*/
+/*3a. Skills*/
 .home-inner-content{
   display: flex;
   align-items: center;
@@ -319,7 +332,7 @@ li {
   }
 }
 
-/*4. Projects*/
+/*4a. Projects*/
 .home-projects{
   margin-top: 50px;
   display: flex;
@@ -406,7 +419,7 @@ li {
   transform: rotateY(0deg); /* Rotate the back face to show the front face */
 }
 
-/*5. Footer*/
+/*5a. Footer*/
 .footer{
   display: flex;
   flex-wrap: wrap;
@@ -464,6 +477,7 @@ li {
 }
 
 /*==============*/
+//2. Blog page//
 /*1b. Blog Hero*/
 
 .blog-hero{
@@ -603,6 +617,7 @@ li {
 }
 
 /*==============*/
+//4. Project Page
 /*1d. Project Hero*/
 
 .project-hero{
@@ -719,6 +734,7 @@ li {
 }
 
 /*==============*/
+//5. About page
 /*1e. About hero*/
 
 .about-hero{
@@ -784,36 +800,7 @@ li {
 }
 
 /*==============*/
-/*1f. Scrollbtn*/
-
-.scroll-btn{
-  display: flex;
-  position: fixed;
-  bottom: 5px;
-  right: 5px;
-  background-color: var(--header-text-color-secondary);
-  border-radius: 50%;
-  z-index: 50;
-  margin: auto;
-  width: 40px;
-  height: 40px;
-  cursor: pointer;
-  transition: 0.3s;
-
-  & img{
-    width: 22px;
-    height: 22px;
-    margin: auto;
-    z-index: 50;
-    filter: brightness(0) saturate(100%) invert(100%) sepia(5%) saturate(6%) hue-rotate(11deg) brightness(105%) contrast(100%);
-  }
-
-  &:hover{
-    scale: 0.94;
-  }
-}
-
-/*==============*/
+//6. Blog Post page
 /*1g. Blog Post Page*/
 
 .blog-post-page{
@@ -862,5 +849,36 @@ li {
     &:hover{
       scale: 0.94;
     }
+  }
+}
+
+/*==============*/
+//7. Functional Componets
+/*1f. Scrollbtn*/
+
+.scroll-btn{
+  display: flex;
+  position: fixed;
+  bottom: 5px;
+  right: 5px;
+  background-color: var(--header-text-color-secondary);
+  border-radius: 50%;
+  z-index: 50;
+  margin: auto;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  transition: 0.3s;
+
+  & img{
+    width: 22px;
+    height: 22px;
+    margin: auto;
+    z-index: 50;
+    filter: brightness(0) saturate(100%) invert(100%) sepia(5%) saturate(6%) hue-rotate(11deg) brightness(105%) contrast(100%);
+  }
+
+  &:hover{
+    scale: 0.94;
   }
 }
