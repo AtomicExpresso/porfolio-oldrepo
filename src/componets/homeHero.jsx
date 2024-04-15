@@ -1,4 +1,4 @@
-import ProfilePic from '../assets/images/profile-pic.png';
+import ProfilePic from '../assets/images/profile-pic.jpg';
 import Twitter from '../assets/images/icons/twitter.svg';
 import Youtube from '../assets/images/icons/youtube.svg';
 import Instagram from '../assets/images/icons/instagram.svg';

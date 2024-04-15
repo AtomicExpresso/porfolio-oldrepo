@@ -4,7 +4,7 @@ import CreatePost from "../componets/main/blogPostDef";
 function BlogPostPage(){
   const { id } = useParams();
 
-
+  /*Changes the render based on which dynamic page your on*/
   switch(id){
     case "PostOne": {
       return (
