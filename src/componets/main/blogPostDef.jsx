@@ -1,5 +1,6 @@
 import BlogHero from "../Blog/blogHero";
 
+/*Creates a blog post based off the switch statment from BlogPostPage*/
 const CreatePost = ({PostTitle, PostDate, PostType, PostText}) => {
   return (
     <div className="blog-post-page">
