@@ -3,6 +3,7 @@ import EmailIcon from '../../assets/images/icons/decor/envelope-regular.svg';
 import MessageIcon from '../../assets/images/icons/decor/message-regular.svg';
 
 /*Constructs the contact box, and the btn handles for submission*/
+//Also, sets a min and max character limit to prevent spammy messages
 function ContactBox(){
   const FieldConstructor = ({Img, Name, PlaceHolder, LabelTxt, MinLen, MaxLen, Type}) => {
     return (

@@ -10,8 +10,7 @@ import Navbar from './componets/main/navBar.jsx';
 import Footer from './componets/main/footer.jsx';
 import ScrollButton from './componets/Functional/scrollBtn';
 
-
-
+//Handles Navbar routes
 function App() {
   return (
   <Router>

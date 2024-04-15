@@ -1,5 +1,5 @@
 /*Blog post content is stored here, Each post has a Title, Date, PostType, Preview and Paragraphs*/
-
+ 
 const BlogPostOne = {
   Title: "Building a portfolio",
   Date: "April 15th, 2024",
