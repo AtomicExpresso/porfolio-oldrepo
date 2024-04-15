@@ -1,11 +1,13 @@
 import ProjectIcon from '../assets/images/icons/decor/paintbrush-solid.svg';
+import TwitterThumbnail from '../assets/images/thumbnails/twitter-clone.webp';
+import PersonalWebsiteThumbnail from '../assets/images/thumbnails/personal-website.webp';
 
 function HomeProjects(){
 
-  const ProjectItem = ({Heading, Desc, BackContent}) => {
+  const ProjectItem = ({Heading, Desc, BackContent, Id, Img}) => {
     return (
-      <div className="project-item" data-front-content={Heading} data-back-content={Desc}>
-      <div className="project-front"></div>
+      <div className={`project-item project-item-${Id}`} data-front-content={Heading} data-back-content={Desc}>
+      <div className="project-front" style={{backgroundImage: `url(${Img})`, backgroundSize: 'cover'}}></div>
       <div className="project-back">
         <h1>{Heading}</h1>
         {BackContent}
@@ -29,6 +31,15 @@ function HomeProjects(){
         Heading='Twitter Clone' 
         Desc="Lorem ipusm mufer itue"
         BackContent={<p>Its a front-end twitter clone built in React. Also was my first React project</p>}
+        Id="one"
+        Img={TwitterThumbnail}
+       />
+       <ProjectItem 
+        Heading='Personal Website' 
+        Desc="Lorem ipusm mufer itue"
+        BackContent={<p>My portfoilo / Personal website</p>}
+        Id="two"
+        Img={PersonalWebsiteThumbnail}
        />
       </div>
     </div>

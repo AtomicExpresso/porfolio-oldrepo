@@ -1,5 +1,5 @@
 import {NavLink, useLocation} from "react-router-dom";
-import Logo from '../../assets/images/logo/logo.svg';
+import Logo from '/favicon.webp';
 
 
 function Navbar() {

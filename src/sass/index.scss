@@ -84,8 +84,10 @@ li {
     gap: 10px;
 
     & img{
-      height:  52px;
-      width: 52px;
+      height:  42px;
+      width: 42px;
+      border-radius: 50%;
+      margin: 5px;
     }
   }
 
@@ -394,11 +396,6 @@ li {
   & .project-front{
     color: #333;
     border: solid 1px rgba(185, 185, 185, 0.685);
-  }
-
-  & .project-front:nth-child(1){
-    background-image: url(../assets/images/thumbnails/twitter-clone.webp);
-    background-size: cover;
   }
 
   & .project-back {
