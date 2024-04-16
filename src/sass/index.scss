@@ -128,6 +128,11 @@ li {
   }
 }
 
+.mobile-nav,
+.mobile-navigation{
+  display: none;
+}
+
 @keyframes navAni {
   from {
     transform: scaleX(0);
@@ -925,5 +930,63 @@ li {
 
   &:hover{
     scale: 0.94;
+  }
+}
+
+//=========================//
+/*8. Media Quarys*/
+
+@media (max-width:960px) {
+  .hero-col-2{
+    & img{
+      display: none;
+    }
+  }
+
+  .nav-bar {
+    & .non-mobile-nav{
+      display: none;
+    }
+  }
+
+  .mobile-navigation{
+    display: flex;
+  }
+
+  .mobile-nav{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+
+    & img {
+      margin-left: auto;
+      height: 32px;
+      width: 32px;
+      cursor: pointer;
+      transition: 0.2s;
+
+      &:active{
+        scale: 0.9;
+      }
+    }
+  }
+
+  .mobile-nav-menu{
+    background-color: var(--header-text-color-third);
+    border-bottom: solid 3px rgba(0, 0, 0, 0.153);
+    width: 100vw;
+    margin-top: 2%;
+    & ul {
+      gap: 5%;
+    }
+  }
+
+  .contact-me-container{
+    width: 80%;
+    & form {
+      width: 80%;
+    }
   }
 }
