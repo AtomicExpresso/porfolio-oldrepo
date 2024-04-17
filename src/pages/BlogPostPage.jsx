@@ -13,7 +13,7 @@ function BlogPostPage(){
         PostTitle= {BlogPostOne.Title}
         PostDate= {BlogPostOne.Date}
         PostType= {BlogPostOne.PostType}
-        PostText= {BlogPostOne.PostText}
+        PostText= {BlogPostOne.PostPara}
       />)
     }
     case "PostTwo": {
@@ -22,7 +22,7 @@ function BlogPostPage(){
         PostTitle= {BlogPostTwo.Title}
         PostDate= {BlogPostTwo.Date}
         PostType= {BlogPostTwo.PostType}
-        PostText= {BlogPostTwo.PostText}
+        PostText= {BlogPostTwo.PostPara}
       />)
     }
   }

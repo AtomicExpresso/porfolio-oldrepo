@@ -14,7 +14,7 @@ function HomeInfo() {
   return (
     <div className="home-info">
       <div className='info-title'>
-        <img src={ProfileIcon}></img>
+        <img src={ProfileIcon} draggable="false"></img>
         <h1>About Me</h1>
       </div>
       <hr></hr>

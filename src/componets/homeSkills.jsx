@@ -45,7 +45,6 @@ function HomeSkills(){
           <CreateSkillItem itemName="Web Development"/>
           <CreateSkillItem itemName="Social media marketing"/>
           <CreateSkillItem itemName="UI/UX Design"/>
-          <CreateSkillItem itemName="Computer Maintence"/>
         </div>
       </div>
       <img src={BottomWave} draggable='false'></img>
