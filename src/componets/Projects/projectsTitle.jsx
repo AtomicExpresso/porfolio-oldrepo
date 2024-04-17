@@ -8,7 +8,7 @@ function ProjectsTile(){
   const ConstructProjectFilter = ({Img, Title}) => {
     return (
       <div className="project-filter-item">
-        <img src={Img} alt={Title} draggable='false'></img>
+        <img src={Img} alt={`${Title}`} draggable='false'></img>
       </div>
     )
   }

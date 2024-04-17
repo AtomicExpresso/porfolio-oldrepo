@@ -9,7 +9,7 @@ function ContactBox(){
     return (
       <div>
         <div className='row-one'>
-          <img src={Img} draggable="false"></img>
+          <img src={Img} draggable="false" alt={`${Name}`}></img>
           <label for={Name}>{LabelTxt}</label>
         </div>
         <input type={Type} placeholder={PlaceHolder} name={Name} className="form-control" maxLength={MinLen} minLength={MaxLen} required></input>
@@ -40,7 +40,7 @@ function ContactBox(){
           type='email'
         />
         <div className='row-one'>
-          <img src={MessageIcon} draggable="false"></img>
+          <img src={MessageIcon} draggable="false" alt="text area icon"></img>
           <label for="email-field">Message</label>
         </div>
         <textarea placeholder="Please enter your message..." className="form-control" maxLength={200} minLength={50} required></textarea>

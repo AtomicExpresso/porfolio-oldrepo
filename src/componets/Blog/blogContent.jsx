@@ -1,4 +1,4 @@
-import DefaultImage from '../../assets/images/backgrounds/bloghero-bg.jpg';
+import DefaultImage from '../../assets/images/backgrounds/bloghero-bg.webp';
 import { BlogPostOne, BlogPostTwo } from '../Storage/BlogTextContent';
 
 /*This will display an overview of blog posts, when a button is clicked on the post preview, it will take you to the corrasponding blog post page. All of the blog post text content is stored in "storage/BlogTextContent.jsx"*/

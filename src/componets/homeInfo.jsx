@@ -14,12 +14,12 @@ function HomeInfo() {
   return (
     <div className="home-info">
       <div className='info-title'>
-        <img src={ProfileIcon} draggable="false"></img>
+        <img src={ProfileIcon} draggable="false" alt="Profile icon"></img>
         <h1>About Me</h1>
       </div>
       <hr></hr>
       <p>👋 Hello there! I'm Felix, a passionate and dedicated front-end developer with a love for turning innovative ideas into reality through code. I thrive in the dynamic world of web development, constantly seeking new challenges and opportunities to expand my skills.</p>
-      <a href='/about'><button className="btn btn-primary">Read More</button></a>
+      <a href='/about'><button className="btn btn-primary">About Me</button></a>
       <div className="icon-list">
         <img src={HtmlIcon} alt="html 5" draggable='false'></img>
         <img src={CssIcon} alt="css 3" draggable='false'></img>

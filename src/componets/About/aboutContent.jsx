@@ -10,7 +10,7 @@ function AboutContent(){
   return(
     <div className="about-content">
       <div className="about-title">
-        <img src={AboutIcon}></img>
+        <img src={AboutIcon} alt="About me icon"></img>
         <h1>About Me</h1>
       </div>
       <hr></hr>

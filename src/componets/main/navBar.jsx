@@ -18,7 +18,7 @@ function Navbar() {
   return (
       <div className="nav-bar">
       <div className="nav-row">
-        <img src={Logo} draggable='false'></img>
+        <img src={Logo} draggable='false' alt="Navigation logo"></img>
         <h1>Felix</h1>
       </div>
       <nav className="non-mobile-nav">

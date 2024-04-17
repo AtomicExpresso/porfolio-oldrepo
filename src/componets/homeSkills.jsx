@@ -21,10 +21,10 @@ function HomeSkills(){
 
   return(
     <div className='home-skills'>
-      <img src={TopWave} draggable='false'></img>
+      <img src={TopWave} draggable='false' alt="Page wave"></img>
       <div className='home-inner-content'>
         <div className='skills-txt'>
-          <img src={HammerIcon} draggable='false'></img>
+          <img src={HammerIcon} draggable='false' alt="Icon"></img>
           <h1>Skills</h1>
         </div>
         <hr></hr>
@@ -47,7 +47,7 @@ function HomeSkills(){
           <CreateSkillItem itemName="UI/UX Design"/>
         </div>
       </div>
-      <img src={BottomWave} draggable='false'></img>
+      <img src={BottomWave} draggable='false' alt="Page wave"></img>
     </div>
   )
 }

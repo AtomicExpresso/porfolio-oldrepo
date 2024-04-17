@@ -21,7 +21,7 @@ function HomeProjects(){
   return (
     <div className="home-projects">
       <div className='project-title'>
-        <img src={ProjectIcon} draggable='false'></img>
+        <img src={ProjectIcon} draggable='false' alt="Projects icon"></img>
         <h1>My Projects</h1>
       </div>
       <p>Heres a list of my best projects i've developed and worked on</p>

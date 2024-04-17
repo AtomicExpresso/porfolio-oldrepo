@@ -1,5 +1,5 @@
 /*Blog post content is stored here, Each post has a Title, Date, PostType, Preview and Paragraphs*/
-//It would be better to make some sort of DB for this, but im still trying to learn backend development before i attempt that
+//It would be better and more efficient to make some sort of DB and backend for this, but im still trying to learn back-end development before i attempt that
 
 const HeadingBuild = ({text}) => {
   return (
@@ -34,7 +34,7 @@ const BlogPostTwo = {
   Date: "April 14th, 2024",
   PostType: "Life",
   PostPreview: "A Test post, idk what to put here",
-  PostPara: "Hi this is my first post, just testing..."
+  PostPara: <div><ParaBuild text="Test post..."/></div>
 }
 
 export {BlogPostOne, BlogPostTwo}

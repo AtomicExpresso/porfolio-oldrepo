@@ -1,12 +1,21 @@
 import { useEffect, useState } from 'react';
-import ProfilePic from '../assets/images/profile-pic.jpg';
+import ProfilePic from '../assets/images/profile-pic.webp';
 import Twitter from '../assets/images/icons/twitter.svg';
 import Youtube from '../assets/images/icons/youtube.svg';
 import Instagram from '../assets/images/icons/instagram.svg';
 import Discord from '../assets/images/icons/discord.svg';
 import WhiteWave from '../assets/images/decorations/banner-wave-white.svg';
 
-function HomeHero(){
+function HomeHero() {
+  const [imageLoaded, setImageLoaded] = useState(false);
+
+  useEffect(() => {
+    const img = new Image();
+    img.src = ProfilePic;
+    img.onload = () => {
+      setImageLoaded(true);
+    };
+  }, []);
 
   return (
     <div className="hero-container">
@@ -24,12 +33,12 @@ function HomeHero(){
           <a href='/projects'><button className="btn btn-primary">View Projects</button></a>
         </div>
         <div className="hero-col-2">
-          <img src={ProfilePic} draggable='false'></img>
+          {imageLoaded && <img src={ProfilePic} draggable='false' alt="Profile picture"></img>}
         </div>
       </div>
-      <img src={WhiteWave} draggable='false'></img>
+      <img src={WhiteWave} draggable='false' alt="Page wave"></img>
     </div>
-  )
+  );
 }
 
-export {HomeHero}
+export { HomeHero };

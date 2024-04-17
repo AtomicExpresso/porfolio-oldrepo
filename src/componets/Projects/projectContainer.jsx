@@ -6,7 +6,7 @@ function ProjectContainer(){
   const ConstructProjectItem = ({Title, Lang, Img, Desc, Link, LinkTwo}) => {
     return (
       <div className="project-page-item">
-        <img src={Img} draggable='false'></img>
+        <img src={Img} draggable='false' alt={`${Title}`}></img>
         <h1>{Title}</h1>
         <h2>{Lang}</h2>
         <p>{Desc}</p>
