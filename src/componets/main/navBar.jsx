@@ -12,7 +12,7 @@ function Navbar() {
 
   const location = useLocation();
   const activeStyle = {
-    color: '#3477e3', // Active color for nav links
+    color: '#0d6efd', // Active color for nav links
   };
 
   return (

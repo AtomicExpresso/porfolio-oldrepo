@@ -27,7 +27,7 @@ const ScrollButton = () =>{
   return ( 
     <div className='scroll-btn'  onClick={scrollToTop}  
     style={{display: visible ? 'flex' : 'none'}}>
-      <img src={upArrow} draggable="false"></img>
+      <img src={upArrow} draggable="false" alt="Scroll to top"></img>
     </div>
   ); 
 } 

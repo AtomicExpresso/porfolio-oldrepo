@@ -20,7 +20,7 @@ const CreatePost = ({PostTitle, PostDate, PostType, PostText}) => {
   const CreateShareBtn = ({icon, name, onClick}) => {
     return (
       <div className="share-this" onClick={onClick}>
-        <img src={icon}></img>
+        <img src={icon} alt='Share this page'></img>
         <h1>{name}</h1>
       </div>
     )
@@ -51,7 +51,7 @@ const CreatePost = ({PostTitle, PostDate, PostType, PostText}) => {
           <h2>{PostDate}</h2>
           <h2>•</h2>
           <div className="post-type-container"><h2><span>#</span>{PostType}</h2></div>
-          <div className="blog-share-icon"><img src={ShareIcon} draggable="false" onClick={openPopup}></img>
+          <div className="blog-share-icon"><img src={ShareIcon} draggable="false" alt='Share this' onClick={openPopup}></img>
           {open && (
             <div className="blog-share-popup">
               <CreateShareBtn icon={TwitterIcon} name="Twitter" onClick={TweetUrl}/>

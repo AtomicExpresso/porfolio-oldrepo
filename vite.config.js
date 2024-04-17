@@ -8,8 +8,7 @@ export default defineConfig({
     react(),
     compression({
       ext: ['.js', '.css', '.html'],
-      algorithm: 'gzip',
-      threshold: 10240, // Minimum file size to compress (10 KB)
+      algorithm: 'brotliCompress'
     }),
   ],
 });
