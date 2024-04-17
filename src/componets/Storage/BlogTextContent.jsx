@@ -1,4 +1,6 @@
 /*Blog post content is stored here, Each post has a Title, Date, PostType, Preview and Paragraphs*/
+//It would be better to make some sort of DB for this, but im still trying to learn backend development before i attempt that
+
 const HeadingBuild = ({text}) => {
   return (
       <h2 style={{fontSize: '22px'}}>{text}</h2>
