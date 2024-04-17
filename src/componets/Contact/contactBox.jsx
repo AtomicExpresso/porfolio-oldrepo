@@ -6,13 +6,15 @@ import MessageIcon from '../../assets/images/icons/decor/message-regular.svg';
 //Also, sets a min and max character limit to prevent spammy messages
 function ContactBox(){
   const FieldConstructor = ({Img, Name, PlaceHolder, LabelTxt, MinLen, MaxLen, Type}) => {
+    const inputId = `${Name}-input`;
+    
     return (
       <div>
         <div className='row-one'>
           <img src={Img} draggable="false" alt={`${Name}`}></img>
-          <label for={Name}>{LabelTxt}</label>
+          <label htmlFor={inputId}>{LabelTxt}</label>
         </div>
-        <input type={Type} placeholder={PlaceHolder} name={Name} className="form-control" maxLength={MinLen} minLength={MaxLen} required></input>
+        <input type={Type} id={inputId} placeholder={PlaceHolder} name={Name} className="form-control" maxLength={MinLen} minLength={MaxLen} required></input>
       </div>
     )
   }
@@ -28,7 +30,7 @@ function ContactBox(){
           PlaceHolder='Your name'
           MinLen={3}
           MaxLen={12}
-          type='name'
+          type='text'
         />
         <FieldConstructor
           Img={EmailIcon}
@@ -41,9 +43,9 @@ function ContactBox(){
         />
         <div className='row-one'>
           <img src={MessageIcon} draggable="false" alt="text area icon"></img>
-          <label for="email-field">Message</label>
+          <label htmlFor="message-box">Message</label>
         </div>
-        <textarea placeholder="Please enter your message..." className="form-control" maxLength={200} minLength={50} required></textarea>
+        <textarea placeholder="Please enter your message..." id="message-box" className="form-control" maxLength={200} minLength={50} name='message-box' required></textarea>
         <button type="submit" className="btn btn-primary">Submit</button>
       </form>
     </div>

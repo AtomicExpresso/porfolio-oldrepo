@@ -12,7 +12,7 @@ function BlogContent(){
           <h2>{Type} •</h2>
           <h2>{Date}</h2>
         </div>
-        <p>{Desc}</p>
+        <div>{Desc}</div>
         <a href={Link}><button className="btn btn-primary">View</button></a>
       </div>
     )
