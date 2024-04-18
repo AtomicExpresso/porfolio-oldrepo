@@ -61,7 +61,7 @@ const CreatePost = ({PostTitle, PostDate, PostType, PostText}) => {
           </div>
         </div>
         <hr></hr>
-      <div>{PostText}</div>
+      <div className="div">{PostText}</div>
     </div>
     </div>
   )
