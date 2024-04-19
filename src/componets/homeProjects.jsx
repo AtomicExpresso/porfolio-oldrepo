@@ -4,14 +4,14 @@ import PersonalWebsiteThumbnail from '../assets/images/thumbnails/personal-websi
 
 function HomeProjects(){
 
-  const ProjectItem = ({Heading, Desc, BackContent, Id, Img}) => {
+  const ProjectItem = ({Heading, Desc, BackContent, Id, Img, ProjectLink}) => {
     return (
       <div className={`project-item project-item-${Id}`} data-front-content={Heading} data-back-content={Desc}>
       <div className="project-front" style={{backgroundImage: `url(${Img})`, backgroundSize: 'cover'}}></div>
       <div className="project-back">
         <h1>{Heading}</h1>
         {BackContent}
-        <button className="btn btn-primary">View Project</button>
+        <a href={`${ProjectLink}`}><button className="btn btn-primary">View Project</button></a>
       </div>
     </div>
 
@@ -33,6 +33,7 @@ function HomeProjects(){
         BackContent={<p>Its a front-end twitter clone built in React. Also was my first React project</p>}
         Id="one"
         Img={TwitterThumbnail}
+        ProjectLink='https://github.com/AtomicExpresso/twitter-clone'
        />
        <ProjectItem 
         Heading='Personal Website' 
@@ -40,6 +41,7 @@ function HomeProjects(){
         BackContent={<p>My portfoilo / Personal website</p>}
         Id="two"
         Img={PersonalWebsiteThumbnail}
+        ProjectLink='#'
        />
       </div>
     </div>

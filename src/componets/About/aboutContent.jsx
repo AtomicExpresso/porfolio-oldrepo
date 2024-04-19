@@ -21,7 +21,7 @@ function AboutContent(){
       />
       <ConstructAboutPara
         altTxt='Paragrapth three'
-        Para="I'm a 20 year old computer science student, I've spent countless hours diving into programming languages, mastering frameworks, and exploring the latest technologies. From front-end technologies like HTML, SCSS, and React to back-end frameworks like Node.js, I'm always eager to expand my skills and tackle new challenges head-on."
+        Para="I'm a 19 year old computer science student, I've spent countless hours diving into programming languages, mastering frameworks, and exploring the latest technologies. From front-end technologies like HTML, SCSS, and React to back-end frameworks like Node.js, I'm always eager to expand my skills and tackle new challenges head-on."
       />
       <ConstructAboutPara
         altTxt='Paragrapth four'

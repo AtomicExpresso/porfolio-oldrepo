@@ -1,7 +1,6 @@
 import TwitterCloneTn from '../../assets/images/thumbnails/twitter-clone.webp';
 import PersonalWebsiteTn from '../../assets/images/thumbnails/personal-website.webp';
 
-
 function ProjectContainer(){
   const ConstructProjectItem = ({Title, Lang, Img, Desc, Link, LinkTwo}) => {
     return (

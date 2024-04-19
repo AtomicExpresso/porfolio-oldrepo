@@ -4,6 +4,8 @@ import MessageIcon from '../../assets/images/icons/decor/message-regular.svg';
 
 /*Constructs the contact box, and the btn handles for submission*/
 //Also, sets a min and max character limit to prevent spammy messages
+//The submit button currently has a placeholder until i figure out a secure way to connect it
+
 function ContactBox(){
   const FieldConstructor = ({Img, Name, PlaceHolder, LabelTxt, MinLen, MaxLen, Type}) => {
     const inputId = `${Name}-input`;
@@ -14,7 +16,7 @@ function ContactBox(){
           <img src={Img} draggable="false" alt={`${Name}`}></img>
           <label htmlFor={inputId}>{LabelTxt}</label>
         </div>
-        <input type={Type} id={inputId} placeholder={PlaceHolder} name={Name} className="form-control" maxLength={MinLen} minLength={MaxLen} required></input>
+        <input type={Type} id={inputId} placeholder={PlaceHolder} name={Name} className="form-control" maxLength={MaxLen} minLength={MinLen} required></input>
       </div>
     )
   }
@@ -37,16 +39,16 @@ function ContactBox(){
           Name='email-field'
           LabelTxt='Email Address'
           PlaceHolder='Ex. Example@gmail.com'
-          MinLen={25}
-          MaxLen={10}
+          MinLen={10}
+          MaxLen={25}
           type='email'
         />
         <div className='row-one'>
           <img src={MessageIcon} draggable="false" alt="text area icon"></img>
           <label htmlFor="message-box">Message</label>
         </div>
-        <textarea placeholder="Please enter your message..." id="message-box" className="form-control" maxLength={200} minLength={50} name='message-box' required></textarea>
-        <button type="submit" className="btn btn-primary">Submit</button>
+        <textarea placeholder="Please enter your message..." id="message-box" className="form-control" maxLength={200} minLength={16} name='message-box' required></textarea>
+        <button type="submit" className="btn btn-primary" onClick={console.log('Place Holder')}>Submit</button>
       </form>
     </div>
   )
