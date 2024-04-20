@@ -1,7 +1,7 @@
 function BlogPostThis(){
   return (
     <div>
-      <p>Developer portfolios are an excellent tool for making a lasting impression on potential clients or recruiters. In this article, I'll walk you through how I built my portfolio and the thought process behind it.</p>
+      <p>Developer portfolios are an excellent tool for making a lasting impression on potential clients or recruiters. In this article, I'll walk you through how I built my portfolio and my thought process behind it.</p>
     <h2>Things to consider:</h2>
       <p>When i was building my portfolio, i wanted the visitor to be able to:</p>
     <ul>

@@ -20,7 +20,7 @@ const CreatePost = ({PostTitle, PostDate, PostType, PostText}) => {
   const CreateShareBtn = ({icon, name, onClick}) => {
     return (
       <div className="share-this" onClick={onClick}>
-        <img src={icon} alt='Share this page'></img>
+        <img src={icon} alt='Share this page' draggable='false'></img>
         <h1>{name}</h1>
       </div>
     )
@@ -41,7 +41,7 @@ const CreatePost = ({PostTitle, PostDate, PostType, PostText}) => {
 
   //For the popup page
   return (
-    <div className="blog-post-page">
+    <div className="blog-post-page" onClick={open ? closePopup : null}>
     <BlogHero/>
     <div className="blog-post-content">
     <h1>{PostTitle}</h1>
