@@ -1,29 +1,29 @@
-import { BlogPostOne, BlogPostTwo } from "../componets/Storage/BlogTextContent";
+import { BlogPost } from "../componets/Storage/BlogTextContent";
 import { useParams } from "react-router-dom";
 import CreatePost from "../componets/main/blogPostDef";
 
 function BlogPostPage(){
   const { id } = useParams();
-
   /*Changes the render based on which dynamic page your on. The blog text, title, date, etc is stored in "Storage/BlogTextContent.jsx". I did this so, all the text could be in one place and accesiable to other componets*/
-  switch(id){
-    case "PostOne": {
+
+  if (id) {
+    const postId = id.substring(4); // Extract the numeric part of the id
+    const post = BlogPost[postId]; // Access the corresponding object in BlogPost array
+    
+    // Check if post exists before rendering
+    if (post) {
       return (
-      <CreatePost
-        PostTitle= {BlogPostOne.Title}
-        PostDate= {BlogPostOne.Date}
-        PostType= {BlogPostOne.PostType}
-        PostText= {BlogPostOne.PostPara}
-      />)
-    }
-    case "PostTwo": {
+        <CreatePost
+          PostTitle={post.Title}
+          PostDate={post.Date}
+          PostType={post.PostType}
+          PostText={post.PostPara}
+        />
+      );
+    } else {
       return (
-      <CreatePost
-        PostTitle= {BlogPostTwo.Title}
-        PostDate= {BlogPostTwo.Date}
-        PostType= {BlogPostTwo.PostType}
-        PostText= {BlogPostTwo.PostPara}
-      />)
+        <h1>Blog post not found</h1>
+      );
     }
   }
 }

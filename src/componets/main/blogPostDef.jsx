@@ -2,7 +2,7 @@ import { useState } from "react";
 import TwitterIcon from '../../assets/images/icons/functionalIcon/twitter.svg';
 import LinkIcon from '../../assets/images/icons/functionalIcon/link-solid.svg';
 import BlogHero from "../Blog/blogHero";
-import ShareIcon from "../../assets/images/icons/functionalIcon/share-icon.svg"
+import ShareIcon from "../../assets/images/icons/functionalIcon/share-icon.svg";
 
 /*Creates the blog post page based off the switch statment from BlogPostPage*/
 const CreatePost = ({PostTitle, PostDate, PostType, PostText}) => {

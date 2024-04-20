@@ -2,21 +2,33 @@
 //It would be better and more efficient to make some sort of DB and backend for this, but im still trying to learn back-end development before i attempt that
 
 import BlogPostThis from "./Writeings/Buildingaportfiolo";
+import DefaultImage from '../../assets/images/backgrounds/bloghero-bg.webp';
 
-const BlogPostOne = {
+// Changed this to an array, if you want to add a new blog post just simply copy an object and assign a new id
+const BlogPost = [{
+  id: 0,
+  Img: DefaultImage,
   Title: "Building a portfolio",
   Date: "April 15th, 2024",
   PostType: "Updates",
   PostPreview: "I discuss how i setup my portfolio and my thought proccess behind it",
+  Link: `Post`,
   PostPara: BlogPostThis()
-}
-
-const BlogPostTwo = {
+},
+{
+  id: 1,
+  Img: DefaultImage,
   Title: "Test Post",
   Date: "April 14th, 2024",
   PostType: "Life",
   PostPreview: "A Test post, idk what to put here",
+  Link: `Post`,
   PostPara: "Test Post........"
 }
+]
 
-export {BlogPostOne, BlogPostTwo}
+BlogPost.forEach((post) => {
+  post.Link = `Post${post.id}`;
+});
+
+export {BlogPost}
