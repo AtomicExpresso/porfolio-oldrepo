@@ -42,7 +42,7 @@ function Navbar() {
       </nav>
       <nav className="mobile-navigation">
         <div className="mobile-nav">
-          <img src={Bars} onClick={isMobileNavOpen}></img>
+          <img src={Bars} onClick={isMobileNavOpen} alt='Mobile navigation menu'></img>
           {openMNav && 
             <div className="mobile-nav-menu">
               <ul>
