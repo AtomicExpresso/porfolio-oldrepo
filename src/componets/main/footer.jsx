@@ -8,7 +8,7 @@ function Footer(){
     <div className="footer">
       <div className="footer-content">
         <div className="footer-col-2">
-          <h2>Felix</h2>
+          <h2>Atomic</h2>
           <p>a passionate and dedicated front-end developer with a love for turning innovative ideas into reality through code</p>
         </div>
         <div className="footer-col-2">
@@ -23,7 +23,7 @@ function Footer(){
         </div>
         <hr></hr>
         <div className="footer-row-2">
-          <p>© Copyright 2024 | Made by <span><a href='https://github.com/AtomicExpresso'>Felix</a></span></p>
+          <p>© Copyright 2024 | Made by <span><a href='https://github.com/AtomicExpresso'>Atomic</a></span></p>
         </div>
     </div>
   )

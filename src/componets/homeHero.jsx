@@ -21,7 +21,7 @@ function HomeHero() {
     <div className="hero-container">
       <div className='hero-group'>
         <div className="hero-col-1">
-          <h1>Hello 👋, I'm <span>Felix</span></h1>
+          <h1>Hello 👋, I'm <span>Atomic</span></h1>
           <h2>I'm a <span>Front end developer</span></h2>
           <p>Passionate front-end developer with a creative mindset, dedicated to transforming innovative concepts into functional and user-friendly web applications through proficient coding and a continuous pursuit of learning</p>
           <div className="hero-social-links">

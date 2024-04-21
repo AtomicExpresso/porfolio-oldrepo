@@ -18,7 +18,7 @@ function HomeInfo() {
         <h1>About Me</h1>
       </div>
       <hr></hr>
-      <p>👋 Hello there! I'm Felix, a passionate and dedicated front-end developer with a love for turning innovative ideas into reality through code. I thrive in the dynamic world of web development, constantly seeking new challenges and opportunities to expand my skills.</p>
+      <p>👋 Hello there! I'm Atomic, a passionate and dedicated front-end developer with a love for turning innovative ideas into reality through code. I thrive in the dynamic world of web development, constantly seeking new challenges and opportunities to expand my skills.</p>
       <a href='/about'><button className="btn btn-primary">About Me</button></a>
       <div className="icon-list">
         <img src={HtmlIcon} alt="html 5" draggable='false'></img>

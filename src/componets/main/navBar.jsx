@@ -19,7 +19,7 @@ function Navbar() {
       <div className="nav-bar">
       <div className="nav-row">
         <img src={Logo} draggable='false' alt="Navigation logo"></img>
-        <h1>Felix</h1>
+        <h1>Atomic</h1>
       </div>
       <nav className="non-mobile-nav">
         <ul>
