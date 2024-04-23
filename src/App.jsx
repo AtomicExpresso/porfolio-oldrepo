@@ -9,6 +9,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Navbar from './componets/main/navBar.jsx';
 import Footer from './componets/main/footer.jsx';
 import ScrollButton from './componets/Functional/scrollBtn';
+import { Analytics } from "@vercel/analytics/react"
 
 //Handles Navbar routes
 function App() {
