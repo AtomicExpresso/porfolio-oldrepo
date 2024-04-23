@@ -16,6 +16,7 @@ function App() {
   return (
   <Router>
       <div>
+        <Analytics/>
         <Navbar />
         <Routes>
           <Route path="/" element={<HomePage />} />
