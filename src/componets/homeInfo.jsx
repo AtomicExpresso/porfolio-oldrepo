@@ -9,8 +9,10 @@ import WebpackIcon from '../assets/images/icons/bars/webpack-bar.svg';
 import ProfileIcon from '../assets/images/icons/decor/user-solid.svg';
 import TauriBar from '../assets/images/icons/bars/tauri-bar.svg';
 import ReactNativeBar from '../assets/images/icons/bars/reactnative-bar.svg';
+import SkillSet from '../Data/json/misc/skillSet.json'
 
 function HomeInfo() {
+
   return (
     <div className="home-info">
       <div className='info-title'>
@@ -18,7 +20,7 @@ function HomeInfo() {
         <h1>About Me</h1>
       </div>
       <hr></hr>
-      <p>👋 Hello there! I'm Atomic, a passionate and dedicated front-end developer with a love for turning innovative ideas into reality through code. I thrive in the dynamic world of web development, constantly seeking new challenges and opportunities to expand my skills.</p>
+      <p>👋 Hello there! I'm Atomic, a passionate and dedicated front-end developer with a love for turning innovative ideas into reality. I mostly work in web development, however im also looking to expanding my skill set into other areas aswell.</p>
       <a href='/about'><button className="btn btn-primary">About Me</button></a>
       <div className="icon-list">
         <img src={HtmlIcon} alt="html 5" draggable='false'></img>

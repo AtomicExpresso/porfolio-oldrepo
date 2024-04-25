@@ -3,11 +3,12 @@
 
 import BlogPostThis from './buildBlog';
 import DefaultImage from '../../assets/images/backgrounds/bloghero-bg.webp';
+import PorfolioPost from '../../assets/images/articles/porfiliopost.webp';
 
 // Changed this to an array, if you want to add a new blog post just simply copy an object and assign a new id
 const BlogPost = [{
   id: 0,
-  Img: DefaultImage,
+  Img: PorfolioPost,
   Title: "Building a portfolio",
   Date: "April 15th, 2024",
   PostType: "Updates",

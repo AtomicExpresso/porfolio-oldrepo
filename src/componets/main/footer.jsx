@@ -9,7 +9,7 @@ function Footer(){
       <div className="footer-content">
         <div className="footer-col-2">
           <h2>Atomic</h2>
-          <p>a passionate and dedicated front-end developer with a love for turning innovative ideas into reality through code</p>
+          <p>a dedicated front-end developer with a drive for turning innovative ideas into reality</p>
         </div>
         <div className="footer-col-2">
           <h2>Socials</h2>

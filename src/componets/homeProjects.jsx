@@ -1,22 +1,32 @@
 import ProjectIcon from '../assets/images/icons/decor/paintbrush-solid.svg';
 import TwitterThumbnail from '../assets/images/thumbnails/twitter-clone.webp';
 import PersonalWebsiteThumbnail from '../assets/images/thumbnails/personal-website.webp';
+import projectInfo from '../Data/json/misc/projectInfo.json';
+
+function GrabImg(Img){
+  switch(Img){
+    case "Twitter Clone":
+      return TwitterThumbnail;
+    break;
+    case "Personal Website":
+      return PersonalWebsiteThumbnail;
+    break;
+  }
+}
 
 function HomeProjects(){
-
-  const ProjectItem = ({Heading, Desc, BackContent, Id, Img, ProjectLink}) => {
+  const BuildProject = projectInfo.projects.map(item => {
     return (
-      <div className={`project-item project-item-${Id}`} data-front-content={Heading} data-back-content={Desc}>
-      <div className="project-front" style={{backgroundImage: `url(${Img})`, backgroundSize: 'cover'}}></div>
+      <div key={item.id} className={`project-item project-item-${item.id}`} data-front-content={item.Heading} data-back-content={item.Desc}>
+      <div className="project-front" style={{backgroundImage: `url(${GrabImg(item.Heading)})`, backgroundSize: 'cover'}}></div>
       <div className="project-back">
-        <h1>{Heading}</h1>
-        {BackContent}
-        <a href={`${ProjectLink}`}><button className="btn btn-primary">View Project</button></a>
+        <h1>{item.Heading}</h1>
+        {item.Desc}
+        <a href={`${item.PreviewLink}`}><button className="btn btn-primary">View Project</button></a>
       </div>
     </div>
-
     )
-  }
+  })
 
   return (
     <div className="home-projects">
@@ -27,22 +37,7 @@ function HomeProjects(){
       <p>Heres a list of my best projects i've developed and worked on</p>
       <hr></hr>
       <div className="project-list-container">
-        <ProjectItem 
-        Heading='Twitter Clone' 
-        Desc="Lorem ipusm mufer itue"
-        BackContent={<p>Its a front-end twitter clone built in React. Also was my first React project</p>}
-        Id="one"
-        Img={TwitterThumbnail}
-        ProjectLink='https://github.com/AtomicExpresso/twitter-clone'
-       />
-       <ProjectItem 
-        Heading='Personal Website' 
-        Desc="Lorem ipusm mufer itue"
-        BackContent={<p>My portfoilo / Personal website</p>}
-        Id="two"
-        Img={PersonalWebsiteThumbnail}
-        ProjectLink='#'
-       />
+        {BuildProject}
       </div>
     </div>
   )

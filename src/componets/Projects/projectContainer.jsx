@@ -1,44 +1,41 @@
 import TwitterCloneTn from '../../assets/images/thumbnails/twitter-clone.webp';
 import PersonalWebsiteTn from '../../assets/images/thumbnails/personal-website.webp';
+import projectInfo from '../../Data/json/misc/projectInfo.json'
+
+function GrabImg(Img){
+  switch(Img){
+    case "Twitter Clone":
+      return TwitterCloneTn;
+    break;
+    case "Personal Website":
+      return PersonalWebsiteTn;
+    break;
+  }
+}
 
 function ProjectContainer(){
-  const ConstructProjectItem = ({Title, Lang, Img, Desc, Link, LinkTwo}) => {
+  const ConstructProjectItem = projectInfo.projects.map(item => {
     return (
       <div className="project-page-item">
-        <img src={Img} draggable='false' alt={`${Title}`}></img>
-        <h1>{Title}</h1>
-        <h2>{Lang}</h2>
-        <p>{Desc}</p>
+        <img src={GrabImg(item.Heading)} draggable='false' alt={`${item.Heading}`}></img>
+        <h1>{item.Heading}</h1>
+        <h2>{item.Lang}</h2>
+        <p>{item.Desc}</p>
         <div className='project-item-btn'>
-          <a href={Link}>
+          <a href={item.PreviewLink}>
             <button className="btn btn-primary">Live View</button>
           </a>
-          <a href={LinkTwo}>
+          <a href={item.SourceLink}>
             <button className="btn btn-success">Source Code</button>
           </a>
         </div>
       </div>
     )
-  }
+  })
 
   return (
     <div className="project-container">
-      <ConstructProjectItem
-        Title='Twitter Clone'
-        Lang='React • CSS3 • Bootstrap'
-        Img={TwitterCloneTn}
-        Desc='A front-end clone of Twitter built in React. This was my first React project'
-        Link='https://react-frontend-twitter-clone.netlify.app/'
-        LinkTwo='https://github.com/AtomicExpresso/twitter-clone'
-      />
-      <ConstructProjectItem
-        Title='Personal Website'
-        Lang='React • Sass • Bootstrap'
-        Img={PersonalWebsiteTn}
-        Desc='My personal website and porfoilo. Built using React, Sass/Scss and Bootstrap'
-        Link='/'
-        LinkTwo='https://github.com/AtomicExpresso/porfolio-v4'
-      />
+      {ConstructProjectItem}
     </div>
   )
 }
