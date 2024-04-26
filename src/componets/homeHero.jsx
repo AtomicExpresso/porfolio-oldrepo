@@ -23,7 +23,7 @@ function HomeHero() {
         <div className="hero-col-1">
           <h1>Hello 👋, I'm <span>Atomic</span></h1>
           <h2>I'm a <span>Front end developer</span></h2>
-          <p>Passionate front-end developer with a creative mindset, dedicated to transforming innovative concepts into functional and user-friendly web applications through proficient coding and a continuous pursuit of learning</p>
+          <p>front-end developer, dedicated to transforming innovative concepts into functional and user-friendly web applications</p>
           <div className="hero-social-links">
             <a href='https://twitter.com/pumped212'><img src={Twitter} alt='Twitter' draggable='false'></img></a>
             <a href="#"><img src={Youtube} alt='Youtube' draggable='false'></img></a>
