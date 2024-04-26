@@ -272,6 +272,7 @@ li {
 
   & .darkmode-toggle--day{
     animation: daytonightbg 0.7s forwards;
+    background-image: url(../assets/images/functional/darkmode-switch-light.svg);
 
     & img {
       width: 26px;
