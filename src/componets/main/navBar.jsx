@@ -1,9 +1,13 @@
 import { useState } from "react";
 import {NavLink, useLocation} from "react-router-dom";
 import Logo from '/favicon.webp';
-import Bars from '../../assets/images/icons/functionalIcon/bars-solid.svg'
+import Bars from '../../assets/images/icons/functionalIcon/bars-solid.svg';
+import DarkModeDay from '../../assets/images/functional/darkmode-switch-light.svg';
+import DarkModeNight from '../../assets/images/functional/darkmode-switch-dark.svg';
+import SunBtn from '../../assets/images/functional/sun-button.svg';
+import MoonBtn from '../../assets/images/functional/moon-button.svg';
 
-function Navbar() {
+function Navbar(props) {
   const [openMNav, SetOpenMNav] = useState(false);
 
   const isMobileNavOpen = () => {
@@ -14,6 +18,10 @@ function Navbar() {
   const activeStyle = {
     color: '#0d6efd', // Active color for nav links
   };
+
+  const toggleDarkMode = () => {
+    props.state(prevState => !prevState)
+  }
 
   return (
       <div className="nav-bar">
@@ -38,6 +46,20 @@ function Navbar() {
           <li>
             <NavLink to="/about" style={location.pathname === "/about" ? activeStyle : null}>About</NavLink>
           </li>
+          <li>
+          <button className="darkmode-toggle" onClick={toggleDarkMode}>
+            {!props.stateVar &&
+              <div className="darkmode-toggle--day" style={{backgroundImage: `url(${DarkModeDay})`, backgroundSize: 'cover'}}>
+                <img src={SunBtn}></img>
+              </div>
+            }
+            {props.stateVar &&
+              <div className="darkmode-toggle--night" style={{backgroundImage: `url(${DarkModeNight})`, backgroundSize: 'cover'}}>
+                <img src={MoonBtn}></img>
+              </div>
+            }
+          </button>
+          </li>
         </ul>
       </nav>
       <nav className="mobile-navigation">
@@ -61,6 +83,7 @@ function Navbar() {
                 <li>
                   <NavLink to="/about" style={location.pathname === "/about" ? activeStyle : null}>About</NavLink>
                 </li>
+
               </ul>
             </div>
           }
