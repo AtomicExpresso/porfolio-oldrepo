@@ -47,15 +47,15 @@ function Navbar(props) {
             <NavLink to="/about" style={location.pathname === "/about" ? activeStyle : null}>About</NavLink>
           </li>
           <li>
-          <button className="darkmode-toggle" onClick={toggleDarkMode}>
+          <button className="darkmode-toggle" onClick={toggleDarkMode} aria-label="Dark mode toggle">
             {!props.stateVar &&
               <div className="darkmode-toggle--day" style={{backgroundImage: `url(${DarkModeDay})`, backgroundSize: 'cover'}}>
-                <img src={SunBtn}></img>
+                <img src={SunBtn} alt='Sun icon'></img>
               </div>
             }
             {props.stateVar &&
               <div className="darkmode-toggle--night" style={{backgroundImage: `url(${DarkModeNight})`, backgroundSize: 'cover'}}>
-                <img src={MoonBtn}></img>
+                <img src={MoonBtn} alt='Moon icon'></img>
               </div>
             }
           </button>
