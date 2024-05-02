@@ -7,4 +7,4 @@ My developer portfolio, built using React, Vite, Scss and Bootstrap.
 - Blog page's
 - Animated dark mode toggle
 
-<a href="https://atomicdev.vercel.app/">Live Preview</a>
+<a href="https://www.pumped.dev/">Live Preview</a>
