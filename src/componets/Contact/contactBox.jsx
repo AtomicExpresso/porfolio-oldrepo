@@ -45,7 +45,7 @@ function ContactBox(){
             <label htmlFor="message-box">Message</label>
           </div>
           <textarea placeholder="Please enter your message..." id="message-box" className="form-control" maxLength={200} minLength={16} name='comments' value={formData.comments} onChange={handleChange} required></textarea>
-          <button type="submit" className="btn btn-primary" onClick={console.log('Place Holder')}>Submit</button>
+          <button type="submit" className="btn btn-primary" onClick={() => console.log('Place Holder')}>Submit</button>
       </form>
     </div>
   )

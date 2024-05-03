@@ -1,5 +1,5 @@
 import porfiloPost from '../../Data/json/writeings/porfiloPost.json';
-import learningReact from '../../Data/json/writeings/learningReact.json';
+import buildingReactEcom from '../../Data/json/writeings/buildingReactEcom.json';
 
 //Parse's the json data into a blog post page
 function BlogPostThis(BlogPost){
@@ -9,8 +9,8 @@ function BlogPostThis(BlogPost){
     case "porfiloPost":
       curPost = porfiloPost;
     break;
-    case "learningReact":
-      curPost = learningReact;
+    case "buildingReactEcom":
+      curPost = buildingReactEcom;
     break;
     default:
       curPost = porfiloPost

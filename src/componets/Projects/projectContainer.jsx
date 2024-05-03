@@ -1,5 +1,7 @@
 import TwitterCloneTn from '../../assets/images/thumbnails/twitter-clone.webp';
 import PersonalWebsiteTn from '../../assets/images/thumbnails/personal-website.webp';
+import EconmProjectTn from '../../assets/images/thumbnails/ecomproject.webp';
+
 import projectInfo from '../../Data/json/misc/projectInfo.json'
 
 function GrabImg(Img){
@@ -9,6 +11,12 @@ function GrabImg(Img){
     break;
     case "Personal Website":
       return PersonalWebsiteTn;
+    break;
+    case "E-comerance website":
+      return EconmProjectTn;
+    break;
+    default:
+      return TwitterCloneTn;
     break;
   }
 }

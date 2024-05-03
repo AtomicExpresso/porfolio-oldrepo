@@ -15,17 +15,17 @@ const BlogPost = [{
   PostPreview: "I discuss how i setup my portfolio and my thought proccess behind it",
   Link: `Post`,
   PostPara: BlogPostThis("porfiloPost")
-},
-{
-  id: 1,
-  Img: DefaultImage,
-  Title: "Test Post",
-  Date: "April 14th, 2024",
-  PostType: "Life",
-  PostPreview: "A Test post, idk what to put here",
-  Link: `Post`,
-  PostPara: BlogPostThis("learningReact")
 }
+// {
+//   id: 1,
+//   Img: DefaultImage,
+//   Title: "E-comerance website in react",
+//   Date: "may 2nd, 2024",
+//   PostType: "Dev",
+//   PostPreview: "ill go over how i designed and built a front-end e-comerance website",
+//   Link: `Post`,
+//   PostPara: BlogPostThis("buildingReactEcom")
+// }
 ]
 
 BlogPost.forEach((post) => {

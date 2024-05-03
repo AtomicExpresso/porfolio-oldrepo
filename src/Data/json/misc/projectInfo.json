@@ -15,6 +15,14 @@
       "Lang": "React • Sass • Bootstrap",
       "SourceLink": "https://github.com/AtomicExpresso/porfolio-v4",
       "PreviewLink": "/"
+    },
+    {
+      "id": 3,
+      "Heading": "E-comerance website",
+      "Desc": "A front-end e-comerance website built with React. Has a add to cart feature, plus a few others",
+      "Lang": "React • Sass • Bootstrap",
+      "SourceLink": "https://github.com/AtomicExpresso/React_E-comerance_Website",
+      "PreviewLink": "https://github.com/AtomicExpresso/React_E-comerance_Website"
     }
   ]
 }

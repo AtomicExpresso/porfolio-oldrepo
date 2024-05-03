@@ -214,6 +214,11 @@ li {
     font-weight: 900;
   }
 
+  & .nav-title{
+    text-decoration: none;
+    color: var(--header-text-color)
+  }
+
   & .nav-row{
     display: flex;
     flex-direction: row;
@@ -234,7 +239,7 @@ li {
     margin: 20px;
   }
 
-  a {
+  & a:not(.nav-title) {
     color: var(--header-text-color);
     text-decoration: none;
     font-weight: 500;
@@ -1201,7 +1206,7 @@ li {
     flex-direction: column;
     position: absolute;
     top: 5px;
-    right: 5px;
+    right: 0px;
 
     & img {
       margin-left: auto;

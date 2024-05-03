@@ -26,8 +26,8 @@ function Navbar(props) {
   return (
       <div className="nav-bar">
       <div className="nav-row">
-        <img src={Logo} draggable='false' alt="Navigation logo"></img>
-        <h1>Atomic</h1>
+        <a href="/" className="nav-title"><img src={Logo} draggable='false' alt="Navigation logo"></img></a>
+        <a href="/" className="nav-title"><h1>Atomic</h1></a>
       </div>
       <nav className="non-mobile-nav">
         <ul>
@@ -83,7 +83,6 @@ function Navbar(props) {
                 <li>
                   <NavLink to="/about" style={location.pathname === "/about" ? activeStyle : null}>About</NavLink>
                 </li>
-
               </ul>
             </div>
           }
