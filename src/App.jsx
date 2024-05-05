@@ -15,7 +15,7 @@ import { Analytics } from "@vercel/analytics/react"
 //Handles Navbar routes
 function App() {
   //Darkmode theme, also saves your prefrence to the localStorage
-  const [darkMode, setDarkMode] = useState(JSON.parse(localStorage.getItem('theme')) || false)
+  const [darkMode, setDarkMode] = useState(() => JSON.parse(localStorage.getItem('theme')) || false)
 
   useEffect(() => {
     localStorage.setItem('theme', JSON.stringify(darkMode))
