@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import HomePage from './pages/HomePage';
 import ProjectPage from './pages/ProjectPage.jsx';
 import ContactPage from './pages/ContactPage.jsx';
@@ -14,7 +14,12 @@ import { Analytics } from "@vercel/analytics/react"
 
 //Handles Navbar routes
 function App() {
-  const [darkMode, setDarkMode] = useState(false)
+  //Darkmode theme, also saves your prefrence to the localStorage
+  const [darkMode, setDarkMode] = useState(JSON.parse(localStorage.getItem('theme')) || false)
+
+  useEffect(() => {
+    localStorage.setItem('theme', JSON.stringify(darkMode))
+  }, [darkMode])
 
   const darkModeEnabled = () => {
     document.getElementById('root').classList.add('dark-mode-enabled')
