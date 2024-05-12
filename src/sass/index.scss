@@ -1134,7 +1134,7 @@ li {
 }
 
 /*==============*/
-//7. Functional Componets
+//. Functional Componets
 /*1f. Scrollbtn*/
 
 .scroll-btn{
@@ -1236,5 +1236,13 @@ li {
     & form {
       width: 80%;
     }
+  }
+
+  .blog-post-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    width: 90%;
   }
 }
