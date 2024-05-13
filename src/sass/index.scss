@@ -886,6 +886,8 @@ li {
     cursor: pointer;
     transition: 0.3s;
     border: inset 3px transparent;
+    width: 100px;
+    height: 35px;
 
     &:hover{
       border: inset 3px rgba(255, 255, 255, 0.432);

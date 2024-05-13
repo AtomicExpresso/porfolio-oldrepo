@@ -4,6 +4,7 @@ import JavascriptBar from '../../assets/images/icons/bars/javascript-bar.svg';
 import SassBar from '../../assets/images/icons/bars/scss-bar.svg';
 import TauriBar from '../../assets/images/icons/bars/tauri-bar.svg';
 import ReactNativeBar from '../../assets/images/icons/bars/reactnative-bar.svg';
+import TypeScriptBar from '../../assets/images/icons/bars/TypeScript-bar.svg';
 
 function ProjectsTile(){
   const ConstructProjectFilter = ({Img, Title}: {Img: string ,Title: string}) => {
@@ -29,16 +30,16 @@ function ProjectsTile(){
           Title='Vanillia Javascript'
         />
         <ConstructProjectFilter
+          Img={TypeScriptBar}
+          Title='TypeScript'
+        />
+        <ConstructProjectFilter
           Img={SassBar}
           Title='Sass / Scss'
         />
         <ConstructProjectFilter
           Img={TauriBar}
           Title='Tauri'
-        />
-        <ConstructProjectFilter
-          Img={ReactNativeBar}
-          Title='React Native'
         />
       </div>
     </div>

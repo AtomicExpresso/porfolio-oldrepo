@@ -10,7 +10,8 @@ import WebpackIcon from '../assets/images/icons/bars/webpack-bar.svg';
 import ProfileIcon from '../assets/images/icons/decor/user-solid.svg';
 import TauriBar from '../assets/images/icons/bars/tauri-bar.svg';
 import ReactNativeBar from '../assets/images/icons/bars/reactnative-bar.svg';
-import SkillSet from '../Data/json/misc/skillSet.json'
+import TypescriptBar from '../assets/images/icons/bars/TypeScript-bar.svg';
+
 
 function HomeInfo() {
 
@@ -32,6 +33,7 @@ function HomeInfo() {
         <img src={ScssIcon} alt="scss" draggable='false'></img>
         <img src={ViteIcon} alt="vite" draggable='false'></img>
         <img src={ReactNativeBar} alt="React Native" draggable='false'></img>
+        <img src={TypescriptBar} alt="Typescript" draggable='false'></img>
         <img src={TauriBar} alt="Tauri" draggable='false'></img>
         <img src={WebpackIcon} alt="webpack" draggable='false'></img>
       </div>
