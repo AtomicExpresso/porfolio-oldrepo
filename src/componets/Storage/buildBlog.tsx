@@ -1,9 +1,37 @@
-import porfiloPost from '../../Data/json/writeings/porfiloPost.json';
-import buildingReactEcom from '../../Data/json/writeings/buildingReactEcom.json';
+import React from 'react';
+import porfiloPostData  from '../../Data/json/writeings/porfiloPost.json';
+import buildingReactEcomData from '../../Data/json/writeings/buildingReactEcom.json';
+
+interface Section {
+  title: string;
+  content: {
+    paragraph?: string;
+    item?: string;
+  }[];
+  links?: {
+    link: string;
+    title: string;
+  }[];
+  list?: {
+    item: string
+  }[];
+}
+
+interface BlogPost {
+  title: string;
+  sections: Section[];
+}
+
+interface Post {
+  sections: Section[];
+}
 
 //Parse's the json data into a blog post page
-function BlogPostThis(BlogPost){
-  let curPost = null;
+function BlogPostThis(BlogPost: string){
+  
+  const porfiloPost: Post = porfiloPostData  as Post;
+  const buildingReactEcom: Post = buildingReactEcomData as Post;
+  let curPost: Post;
 
   switch (BlogPost){
     case "porfiloPost":
@@ -49,7 +77,7 @@ function BlogPostThis(BlogPost){
             {section.links && (
               <div>
                 {section.links.map((item, i) => (
-                  <a href={item.link} key={i} alt={item.title}>{item.title}</a>
+                  <a href={item.link} key={i}>{item.title}</a>
               ))}
               </div>
             )}

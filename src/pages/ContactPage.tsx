@@ -1,3 +1,4 @@
+import React from 'react'
 import ContactHero from "../componets/Contact/contactHero"
 import ContactBox from "../componets/Contact/contactBox"
 import {Helmet} from "react-helmet";

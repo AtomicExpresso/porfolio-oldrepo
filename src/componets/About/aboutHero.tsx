@@ -1,3 +1,4 @@
+import React from "react";
 function AboutHero(){
   return(
     <div className="about-hero">

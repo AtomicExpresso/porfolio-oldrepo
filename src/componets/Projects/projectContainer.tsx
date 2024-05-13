@@ -1,10 +1,11 @@
+import React from 'react'
 import TwitterCloneTn from '../../assets/images/thumbnails/twitter-clone.webp';
 import PersonalWebsiteTn from '../../assets/images/thumbnails/personal-website.webp';
 import EconmProjectTn from '../../assets/images/thumbnails/ecomproject.webp';
 
 import projectInfo from '../../Data/json/misc/projectInfo.json'
 
-function GrabImg(Img){
+function GrabImg(Img: string){
   switch(Img){
     case "Twitter Clone":
       return TwitterCloneTn;
@@ -22,9 +23,9 @@ function GrabImg(Img){
 }
 
 function ProjectContainer(){
-  const ConstructProjectItem = projectInfo.projects.map(item => {
+  const ConstructProjectItem = projectInfo.projects.map((item, index) => {
     return (
-      <div className="project-page-item">
+      <div className="project-page-item" key={index}>
         <img src={GrabImg(item.Heading)} draggable='false' alt={`${item.Heading}`}></img>
         <h1>{item.Heading}</h1>
         <h2>{item.Lang}</h2>

@@ -1,12 +1,23 @@
 /*Blog post content is stored here, Each post has a Title, Date, PostType, Preview and Paragraphs*/
 //It would be better and more efficient to make some sort of DB and backend for this, but im still trying to learn back-end development before i attempt that
-
+import React from 'react';
 import BlogPostThis from './buildBlog';
 import DefaultImage from '../../assets/images/backgrounds/bloghero-bg.webp';
 import PorfolioPost from '../../assets/images/articles/porfiliopost.webp';
 
 // Changed this to an array, if you want to add a new blog post just simply copy an object and assign a new id
-const BlogPost = [{
+interface BlogPost {
+  id: number;
+  Img: string;
+  Title: string;
+  Date: string;
+  PostType: string;
+  PostPreview: string;
+  Link: string;
+  PostPara: JSX.Element; // Assuming BlogPostThis returns a JSX element
+}
+
+const BlogPost: BlogPost[] = [{
   id: 0,
   Img: PorfolioPost,
   Title: "Building a portfolio",

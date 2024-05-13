@@ -1,3 +1,4 @@
+import React from 'react'
 import NotFound from '../../assets/images/decorations/NotFound.webp'
 
 function Error(){

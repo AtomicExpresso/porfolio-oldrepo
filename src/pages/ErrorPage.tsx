@@ -1,3 +1,4 @@
+import React from 'react'
 import Error from "../componets/Error/Error";
 
 function ErrorPage(){

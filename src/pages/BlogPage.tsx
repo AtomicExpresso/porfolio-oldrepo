@@ -1,3 +1,4 @@
+import React from "react";
 import BlogHero from "../componets/Blog/blogHero";
 import BlogContent from "../componets/Blog/blogContent";
 import {Helmet} from "react-helmet";

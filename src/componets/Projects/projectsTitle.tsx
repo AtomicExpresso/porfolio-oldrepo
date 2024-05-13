@@ -1,3 +1,4 @@
+import React from 'react-dom'
 import ReactBar from '../../assets/images/icons/bars/react-bar.svg';
 import JavascriptBar from '../../assets/images/icons/bars/javascript-bar.svg';
 import SassBar from '../../assets/images/icons/bars/scss-bar.svg';
@@ -5,7 +6,7 @@ import TauriBar from '../../assets/images/icons/bars/tauri-bar.svg';
 import ReactNativeBar from '../../assets/images/icons/bars/reactnative-bar.svg';
 
 function ProjectsTile(){
-  const ConstructProjectFilter = ({Img, Title}) => {
+  const ConstructProjectFilter = ({Img, Title}: {Img: string ,Title: string}) => {
     return (
       <div className="project-filter-item">
         <img src={Img} alt={`${Title}`} draggable='false'></img>
@@ -21,23 +22,23 @@ function ProjectsTile(){
       <div className="project-filter">
         <ConstructProjectFilter
           Img={ReactBar}
-          title='React'
+          Title='React'
         />
         <ConstructProjectFilter
           Img={JavascriptBar}
-          title='Vanillia Javascript'
+          Title='Vanillia Javascript'
         />
         <ConstructProjectFilter
           Img={SassBar}
-          title='Sass / Scss'
+          Title='Sass / Scss'
         />
         <ConstructProjectFilter
           Img={TauriBar}
-          title='Tauri'
+          Title='Tauri'
         />
         <ConstructProjectFilter
           Img={ReactNativeBar}
-          title='React Native'
+          Title='React Native'
         />
       </div>
     </div>

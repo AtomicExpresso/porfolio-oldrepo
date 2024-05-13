@@ -1,5 +1,6 @@
+import React from "react";
 import { useState } from "react";
-import {NavLink, useLocation} from "react-router-dom";
+import {NavLink, useLocation } from "react-router-dom";
 import Logo from '/favicon.webp';
 import Bars from '../../assets/images/icons/functionalIcon/bars-solid.svg';
 import DarkModeDay from '../../assets/images/functional/darkmode-switch-light.svg';
@@ -7,7 +8,12 @@ import DarkModeNight from '../../assets/images/functional/darkmode-switch-dark.s
 import SunBtn from '../../assets/images/functional/sun-button.svg';
 import MoonBtn from '../../assets/images/functional/moon-button.svg';
 
-function Navbar(props) {
+interface NavbarProps {
+  darkModeFn: () => void;
+  stateVar: boolean;
+}
+
+function Navbar(props: NavbarProps) {
   const [openMNav, SetOpenMNav] = useState(false);
 
   const isMobileNavOpen = () => {
@@ -15,13 +21,9 @@ function Navbar(props) {
   }
 
   const location = useLocation();
-  const activeStyle = {
+  const activeStyle: React.CSSProperties = {
     color: '#0d6efd', // Active color for nav links
   };
-
-  const toggleDarkMode = () => {
-    props.state(prevState => !prevState)
-  }
 
   return (
       <div className="nav-bar">
@@ -32,22 +34,22 @@ function Navbar(props) {
       <nav className="non-mobile-nav">
         <ul>
           <li>
-            <NavLink to="/" style={location.pathname === "/" ? activeStyle : null}>Home</NavLink>
+            <NavLink to="/" style={location.pathname === "/" ? activeStyle : undefined}>Home</NavLink>
           </li>
           <li>
-            <NavLink to="/projects" style={location.pathname === "/projects" ? activeStyle : null}>Projects</NavLink>
+            <NavLink to="/projects" style={location.pathname === "/projects" ? activeStyle : undefined}>Projects</NavLink>
           </li>
           <li>
-            <NavLink to="/blog" style={location.pathname === "/blog" ? activeStyle : null}>Blog</NavLink>
+            <NavLink to="/blog" style={location.pathname === "/blog" ? activeStyle : undefined}>Blog</NavLink>
           </li>
           <li>
-            <NavLink to="/contact" style={location.pathname === "/contact" ? activeStyle : null}>Contact</NavLink>
+            <NavLink to="/contact" style={location.pathname === "/contact" ? activeStyle : undefined}>Contact</NavLink>
           </li>
           <li>
-            <NavLink to="/about" style={location.pathname === "/about" ? activeStyle : null}>About</NavLink>
+            <NavLink to="/about" style={location.pathname === "/about" ? activeStyle : undefined}>About</NavLink>
           </li>
           <li>
-          <button className="darkmode-toggle" onClick={toggleDarkMode} aria-label="Dark mode toggle">
+          <button className="darkmode-toggle" onClick={() => props.darkModeFn()} aria-label="Dark mode toggle">
             {!props.stateVar &&
               <div className="darkmode-toggle--day" style={{backgroundImage: `url(${DarkModeDay})`, backgroundSize: 'cover'}}>
                 <img src={SunBtn} alt='Sun icon'></img>
@@ -69,19 +71,19 @@ function Navbar(props) {
             <div className="mobile-nav-menu">
               <ul>
                 <li>
-                  <NavLink to="/" style={location.pathname === "/" ? activeStyle : null}>Home</NavLink>
+                  <NavLink to="/" style={location.pathname === "/" ? activeStyle : undefined}>Home</NavLink>
                 </li>
                 <li>
-                  <NavLink to="/projects" style={location.pathname === "/projects" ? activeStyle : null}>Projects</NavLink>
+                  <NavLink to="/projects" style={location.pathname === "/projects" ? activeStyle : undefined}>Projects</NavLink>
                 </li>
                 <li>
-                  <NavLink to="/blog" style={location.pathname === "/blog" ? activeStyle : null}>Blog</NavLink>
+                  <NavLink to="/blog" style={location.pathname === "/blog" ? activeStyle : undefined}>Blog</NavLink>
                 </li>
                 <li>
-                  <NavLink to="/contact" style={location.pathname === "/contact" ? activeStyle : null}>Contact</NavLink>
+                  <NavLink to="/contact" style={location.pathname === "/contact" ? activeStyle : undefined}>Contact</NavLink>
                 </li>
                 <li>
-                  <NavLink to="/about" style={location.pathname === "/about" ? activeStyle : null}>About</NavLink>
+                  <NavLink to="/about" style={location.pathname === "/about" ? activeStyle : undefined}>About</NavLink>
                 </li>
               </ul>
             </div>

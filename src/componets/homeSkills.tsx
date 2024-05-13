@@ -1,10 +1,11 @@
+import React from 'react'
 import TopWave from '../assets/images/decorations/banner-wave-yellow-bottom.svg';
 import BottomWave from '../assets/images/decorations/banner-wave-yellow.svg';
 import HammerIcon from '../assets/images/icons/decor/hammer-solid.svg';
 import SkillSet from '../Data/json/misc/skillSet.json'
 
 function HomeSkills(){
-  const CreateSkillItem = ({itemName}) => {
+  const CreateSkillItem = ({itemName}: {itemName: string}) => {
     return (
       <div className="skill-item">
         <h1>{itemName}</h1>

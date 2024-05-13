@@ -1,3 +1,4 @@
+import React from 'react'
 import BootStrapIcon from '../assets/images/icons/bars/bootstrap-bar.svg';
 import HtmlIcon from '../assets/images/icons/bars/html-bar.svg';
 import CssIcon from '../assets/images/icons/bars/css-bar.svg';

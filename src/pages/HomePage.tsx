@@ -1,3 +1,4 @@
+import React from 'react'
 import { HomeHero } from "../componets/homeHero";
 import HomeInfo from "../componets/homeInfo";
 import HomeSkills from "../componets/homeSkills";

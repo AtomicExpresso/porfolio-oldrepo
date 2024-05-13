@@ -1,4 +1,5 @@
-import { useState } from 'react';
+import React from 'react'
+import { ChangeEvent, useState } from 'react';
 import NameIcon from '../../assets/images/icons/decor/signature-solid.svg';
 import EmailIcon from '../../assets/images/icons/decor/envelope-regular.svg';
 import MessageIcon from '../../assets/images/icons/decor/message-regular.svg';
@@ -14,7 +15,7 @@ function ContactBox(){
     comments: ""
   });
 
-  const handleChange = (e) => {
+  const handleChange = (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const {name, value} = e.target
     setFormData(prevFromData => {
       return {

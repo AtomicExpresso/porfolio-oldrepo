@@ -1,3 +1,4 @@
+import React from "react"
 function BlogHero(){
   return(
     <div className="blog-hero">

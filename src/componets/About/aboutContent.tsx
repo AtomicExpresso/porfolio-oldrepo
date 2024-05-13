@@ -1,3 +1,4 @@
+import React from 'react';
 import AboutIcon from '../../assets/images/icons/decor/user-solid.svg';
 
 const Paragraphs = [

@@ -1,34 +1,47 @@
+import React from 'react';
 import { useEffect, useState } from 'react'
 import HomePage from './pages/HomePage';
-import ProjectPage from './pages/ProjectPage.jsx';
-import ContactPage from './pages/ContactPage.jsx';
-import AboutPage from './pages/AboutPage.jsx';
-import BlogPage from './pages/BlogPage.jsx';
-import BlogPostPage from './pages/BlogPostPage.jsx';
-import ErrorPage from './pages/ErrorPage.jsx';
+import ProjectPage from './pages/ProjectPage';
+import ContactPage from './pages/ContactPage';
+import AboutPage from './pages/AboutPage';
+import BlogPage from './pages/BlogPage';
+import BlogPostPage from './pages/BlogPostPage';
+import ErrorPage from './pages/ErrorPage';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Navbar from './componets/main/navBar.jsx';
-import Footer from './componets/main/footer.jsx';
+import Navbar from './componets/main/navBar';
+import Footer from './componets/main/footer';
 import ScrollButton from './componets/Functional/scrollBtn';
 import { Analytics } from "@vercel/analytics/react"
 
+const RootElement = document.getElementById('root')!;
+if (!RootElement) {
+    throw new Error("Root element '#root' not found in the DOM");
+}
+
 //Handles Navbar routes
 function App() {
-  //Darkmode theme, also saves your prefrence to the localStorage
-  const [darkMode, setDarkMode] = useState(() => JSON.parse(localStorage.getItem('theme')) || false)
+  
+    //Darkmode theme, also saves your prefrence to the localStorage
+    const [darkMode, setDarkMode] = useState<boolean>(() => {
+    const theme = localStorage.getItem('theme') 
+    return theme ? JSON.parse(theme) : false})
 
   useEffect(() => {
     localStorage.setItem('theme', JSON.stringify(darkMode))
   }, [darkMode])
 
   const darkModeEnabled = () => {
-    document.getElementById('root').classList.add('dark-mode-enabled')
-    document.getElementById('root').classList.remove('dark-mode-disabled')
+    RootElement.classList.add('dark-mode-enabled')
+    RootElement.classList.remove('dark-mode-disabled')
   }
 
   const darkModeDisabled = () => {
-    document.getElementById('root').classList.add('dark-mode-diabled')
-    document.getElementById('root').classList.remove('dark-mode-enabled')
+    RootElement.classList.add('dark-mode-diabled')
+    RootElement.classList.remove('dark-mode-enabled')
+  }
+
+  const changeDarkMode = () => {
+    setDarkMode(prevState => !prevState)
   }
 
   darkMode ? darkModeEnabled() : darkModeDisabled()
@@ -37,7 +50,7 @@ function App() {
   <Router>
       <div>
         <Analytics/>
-        <Navbar state={setDarkMode} stateVar={darkMode}/>
+        <Navbar darkModeFn={changeDarkMode} stateVar={darkMode}/>
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/projects" element={<ProjectPage />} />

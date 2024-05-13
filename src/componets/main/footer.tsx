@@ -1,3 +1,4 @@
+import React from 'react';
 import Twitter from '../../assets/images/icons/twitter.svg';
 import Youtube from '../../assets/images/icons/youtube.svg';
 import Instagram from '../../assets/images/icons/instagram.svg';

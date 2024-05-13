@@ -7,7 +7,7 @@ export default defineConfig({
   plugins: [
     react(),
     compression({
-      ext: ['.js', '.css', '.html'],
+      ext: ['.js', '.css', '.html', '.ts'],
       algorithm: 'brotliCompress'
     }),
   ],

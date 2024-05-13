@@ -1,3 +1,4 @@
+import React from "react";
 import { useState } from "react";
 import TwitterIcon from '../../assets/images/icons/functionalIcon/twitter.svg';
 import LinkIcon from '../../assets/images/icons/functionalIcon/link-solid.svg';
@@ -5,7 +6,7 @@ import BlogHero from "../Blog/blogHero";
 import ShareIcon from "../../assets/images/icons/functionalIcon/share-icon.svg";
 
 /*Creates the blog post page based off the switch statment from BlogPostPage*/
-const CreatePost = ({PostTitle, PostDate, PostType, PostText}) => {
+const CreatePost = ({PostTitle, PostDate, PostType, PostText}: {PostTitle: string, PostText: JSX.Element, PostDate: string, PostType: string}) => {
   //Handles the blog share icon
   const [open, setOpen] = useState(false)
 
@@ -17,7 +18,7 @@ const CreatePost = ({PostTitle, PostDate, PostType, PostText}) => {
   };
 
   //Constructor for the share buttons within the share div
-  const CreateShareBtn = ({icon, name, onClick}) => {
+  const CreateShareBtn = ({icon, name, onClick}: {icon: string, name:string, onClick: React.MouseEventHandler<HTMLDivElement>}) => {
     return (
       <div className="share-this" onClick={onClick}>
         <img src={icon} alt='Share this page' draggable='false'></img>
@@ -41,7 +42,7 @@ const CreatePost = ({PostTitle, PostDate, PostType, PostText}) => {
 
   //For the popup page
   return (
-    <div className="blog-post-page" onClick={open ? closePopup : null}>
+    <div className="blog-post-page" onClick={() => open ? closePopup : null}>
     <BlogHero/>
     <div className="blog-post-content">
     <h1>{PostTitle}</h1>

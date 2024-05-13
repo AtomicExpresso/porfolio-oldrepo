@@ -1,3 +1,4 @@
+import React from 'react'
 import { useEffect, useState } from 'react';
 import ProfilePic from '../assets/images/profile-pic.webp';
 import Twitter from '../assets/images/icons/twitter.svg';
