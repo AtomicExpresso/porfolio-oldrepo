@@ -1,6 +1,6 @@
 # Developer Portfoilo project ☕
 
-My developer portfolio, built using React, Vite, Scss and Bootstrap.
+My developer portfolio, built using React, Typescript, Vite, Scss and Bootstrap.
 
 ## Features ⚙️
 - Mobile support w/ nav bar
